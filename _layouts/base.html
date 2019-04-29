@@ -1,0 +1,11 @@
+<!doctype html>
+<html class="no-js" lang="{{ page.lang | default: site.lang | default: 'fr' }}">
+    {% include head.html %}
+    <body class="page-{{ page.type }}{% if page.layout contains 'content' %} content{% endif %}{% if page.color %} {{ page.color }}{% endif %}">
+        {% include header.html %}
+        <main>
+            {{ content }}
+        </main>
+        {% include footer.html %}
+    </body>
+</html>

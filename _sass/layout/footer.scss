@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+.footer {
+  // width: 100vw;
+  height: 250px;
+  padding: 25px 50px;
+  background-color: rgb(96, 96, 96);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-main {
+  width: 20%;
+}
+
+.footer-categories {
+  width: 15%;
+}
+
+.footer-main, .footer-categories {
+  h3, h4 {
+    font-family: "InfoDispBold Roman";
+  }
+  h3 {
+    font-size: 24px;
+    margin: 17px 0;
+  }
+  h4 {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  p {
+    font-family: "InfoDispBook Roman";
+  }
+  a {
+    font-family: "InfoDispBook Roman";
+    text-decoration: none;
+    color: black;
+    margin: 16px 0;
+  }
+}
