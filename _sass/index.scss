@@ -1,37 +1,268 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+    font-family: "InfoDispBold Roman";
+    font-size: 24px;
+
+    @include from-large {
+      font-size: 40px;
+    }
+}
+
+h2 {
+    font-family: "InfoText Normal";
+    font-size: 20px;
+
+    @include from-large {
+      font-size: 30px;
+    }
+}
+
+// BANNER
+
 .home-banner {
-  height: calc(100vh - 57px);
+  min-height: calc(100vh - 57px);
   background-image: url("https://images.unsplash.com/photo-1470110385011-8c66cb46f0e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   background-size: cover;
   text-align: center;
   position: relative;
-
-  h1 {
-    font-family: "InfoDispBold Roman";
-    font-size: 32px;
-  }
-  h2 {
-    font-family: "InfoDispBook Roman";
-    font-size: 28px;
-  }
-  a {
-    font-family: "InfoDispBold Roman";
-    text-decoration: none;
-    color: black;
-  }
+  overflow-y: scroll;
 }
 
 .home-banner-title {
-  padding: 0 10px;
+  min-height: 35vh;
+  padding: 50px;
   position: absolute;
-  top: 50%;
+  top: 5%;
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  @include from-large {
+    top: 45%;
+  }
+}
+
+.home-button {
+  font-family: "InfoDispBold Roman";
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 15px;
+  background-color: rgba(254, 197, 84, 0.7);
+  transition: all 0.8s ease;
+  &:hover {
+    background-color: rgba(254, 197, 84, 1);
+  }
+
+  @include from-large {
+    font-size: 24px;
+  }
 }
 
 
-@include from-medium {
+@include from-xlarge {
   .home-banner-title {
     padding: 0 180px;
   }
   .home-banner-title > h1 {
+    padding: 0 200px;
+  }
+  .home-banner-title > h2 {
+    padding: 0 50px;
+  }
+}
+
+//TOP-TRAININGS
+
+.home-top-trainings {
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+}
+
+.home-top-trainings > h2 {
+  padding: 50px;
+}
+
+.home-training-grid {
+  margin: 0 100px 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  @include from-large {
+    flex-direction: row;
     padding: 0 100px;
   }
+}
+
+.home-training-card {
+  height: 275px;
+  width: 50vw;
+  position: relative;
+  margin-bottom: 50px;
+
+  @include from-large {
+    min-height: 50vh;
+    width: 20vw;
+  }
+}
+
+.home-training-card-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 5px solid white;
+  text-align: center;
+  margin-top: -60px;
+
+  @include from-large {
+    height: 150px;
+    width: 150px;
+    margin-top: -85px;
+  }
+}
+
+.home-training-link1, .home-training-link2, .home-training-link3 {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 25px;
+  font-family: "InfoDispSemiBold Roman";
+  font-size: 12px;
+
+  @include from-large {
+    font-size: 20px;
+  }
+}
+
+.home-training-card-color1, .home-training-card-color2, .home-training-card-color3 {
+  min-height: 70%;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
+  text-align: center;
+  h3 {
+    font-family: "InfoDispSemiBold Roman";
+    font-size: 16px;
+    margin: 10px 0 0 0;
+  }
+  h4 {
+    font-family: "Infotext Normal";
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  @include from-large {
+    h3 {
+      font-size: 24px;
+      margin: 0;
+    }
+    h4 {
+      font-size: 24px;
+    }
+  }
+}
+
+
+.home-training-card-color1 {
+  background-color: rgb(75, 194, 200);
+  a {
+    color: rgb(75, 194, 200);
+  }
+}
+
+.home-training-card-color2 {
+  background-color: rgb(248, 176, 164);
+  a {
+    color: rgb(248, 176, 164);
+  }
+}
+
+.home-training-card-color3 {
+  background-color: rgb(255, 142, 102);
+  a {
+    color: rgb(255, 142, 102);
+  }
+}
+
+//HOME-SATISFIED
+
+.home-satisfied {
+  min-height: 100vh;
+  background-image: url("/assets/img/FOND_POIS.png");
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.home-satisfied > h2 {
+  padding: 50px;
+}
+
+.home-satisfied-carousel-card {
+  min-height: 30vh;
+  background-color: white;
+  box-shadow: 3px 3px 10px rgba(136,136,136,0.7);
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  padding: 50px;
+
+  @include from-large {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 150px;
+  }
+}
+
+.home-satisfied-carousel-card > img {
+  text-align: center;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.home-satisfied-carousel-card-description {
+  position: relative;
+
+  p {
+    font-family: "InfoDispBook Italic";
+    font-size: 20px;
+  }
+}
+
+.home-satisfied-carousel-card-text {
+  @include from-large {
+    padding: 20px 0 20px 30px;
+  }
+}
+
+.home-satisfied-carousel-card-person {
+  p {
+    margin: 0;
+    font-family: "Infotext Normal";
+    font-size: 20px;
+  }
+
+  @include from-large {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.home-satisfied-carousel-card-name {
+  color: rgb(248, 176, 164);
 }
