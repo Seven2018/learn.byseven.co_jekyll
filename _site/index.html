@@ -10,18 +10,33 @@
     <meta name="keywords" content="">
     <meta name="robots" content="index, follow">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/index.css">
     
     <link rel="icon" href="/assets/img/favicon.ico">
 </head>
 
     <body class="page-index">
-        <header class="navbar">
+        <header class="navbar-seven">
   <img src="../assets/img/logo_learn_inline.png" alt="">
   <nav class="navbar-links">
     <a href="">Formations</a>
     <a href="">Pédagogie</a>
   </nav>
+<!--   <nav class="navbar-burger">
+    <i class="fas fa-bars"></i>
+  </nav> -->
+  <div class="dropdown navbar-burger">
+    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+      <li><a href="#">Formations</a></li>
+      <li><a href="#">Pédagogie</a></li>
+    </ul>
+  </div>
 </header>
 
         <main>
@@ -29,7 +44,7 @@
   <div class="home-banner-title">
     <h1>Apprendre, créer, transformer en continu pour entreprendre son avenir</h1>
     <h2>Chez Seven, nous créons des expériences d'apprentissages pour les femmes et les hommes de façon à transformer les organisations</h2>
-    <a href="" class="home-button">Découvrez nos formations</a>
+    <a href="" class="home-button-discover">Découvrez nos formations</a>
   </div>
 </div>
 <div class="home-top-trainings">
@@ -60,21 +75,31 @@
       </div>
     </div>
   </div>
-  <a href="" class="home-button">Voir toutes les formations</a>
+  <a href="" class="home-button-discover">Voir toutes les formations</a>
 </div>
 <div class="home-satisfied">
-  <h2>Ils nous font confiance</h2>
-  <div class="home-satisfied-carousel">
-    <div class="home-satisfied-carousel-card">
-      <img src="/assets/img/Yahya.jpeg" alt="">
-      <div class="home-satisfied-carousel-card-description">
-        <p class="home-satisfied-carousel-card-text">"Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla."</p>
-        <div class="home-satisfied-carousel-card-person">
-          <p class="home-satisfied-carousel-card-name">Yahya Beauxcheveux</p>
-          <p class="home-satisfied-carousel-card-jobtitle"><strong>Responsable des ventes chez l'Oréal</strong></p>
+  <div class="home-satisfied-content">
+    <h2>Ils nous font confiance</h2>
+    <div class="home-satisfied-carousel">
+      <div class="home-satisfied-carousel-card">
+        <img src="/assets/img/Yahya.jpeg" alt="">
+        <div class="home-satisfied-carousel-card-description">
+          <p class="home-satisfied-carousel-card-text">"Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla."</p>
+          <div class="home-satisfied-carousel-card-person">
+            <p class="home-satisfied-carousel-card-name">Yahya Beauxcheveux</p>
+            <p class="home-satisfied-carousel-card-jobtitle"><strong>Responsable des ventes chez l'Oréal</strong></p>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="home-contact-us">
+  <h2>Vous souhaitez mettre en place des formations pour vos collaborateurs ?</h2>
+  <h3>Nous avons une équipe de 55 experts et formateurs passionnés</h3>
+  <div class="home-contact-us-buttons">
+    <a href="" class="home-button-contact">Contactez-nous</a>
+    <a href="" class="home-button-discover">Découvrez nos formations</a>
   </div>
 </div>
 
@@ -109,4 +134,5 @@
 </div>
 
     </body>
+    <script src="/assets/javascripts/bootstrap.js"></script>
 </html>

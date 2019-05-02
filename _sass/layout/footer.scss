@@ -4,15 +4,26 @@ body {
 
 .footer {
   // width: 100vw;
-  height: 250px;
+  min-height: 250px;
   padding: 25px 50px;
   background-color: rgb(96, 96, 96);
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+
+  @include from-large {
+    flex-direction: row;
+  }
 }
 
 .footer-main {
-  width: 20%;
+  display: flex;
+  justify-content: space-around;
+
+  @include from-large {
+    display: block;
+    width: 20%;
+  }
 }
 
 .footer-categories {
@@ -24,8 +35,12 @@ body {
     font-family: "InfoDispBold Roman";
   }
   h3 {
-    font-size: 24px;
-    margin: 17px 0;
+    margin: 0;
+
+    @include from-large {
+      font-size: 24px;
+      margin: 17px 0;
+    }
   }
   h4 {
     font-size: 18px;
@@ -33,11 +48,14 @@ body {
   }
   p {
     font-family: "InfoDispBook Roman";
+    width: 40%;
+
+    @include from-large {
+      width: auto;
+    }
   }
   a {
     font-family: "InfoDispBook Roman";
-    text-decoration: none;
-    color: black;
     margin: 16px 0;
   }
 }
