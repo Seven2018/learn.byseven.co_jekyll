@@ -1,0 +1,58 @@
+.navbar-seven {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  position: relative;
+
+  img {
+    width: 237px;
+    height: 33px;
+    margin: 7px 0;
+  }
+}
+
+.navbar-links {
+  margin: 1rem 10px;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: "InfoDispSemiBold Roman";
+  }
+}
+
+.navbar-burger {
+  position: absolute;
+  top: 5.5px;
+  right: 10px;
+
+  i {
+    font-size: 19px;
+  }
+}
+
+@include from-medium {
+    .navbar-seven {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+        padding-left: 20px;
+
+        .navbar-links {
+          display: inline;
+            a {
+                margin: 0 20px;
+                font-size: 1.4em;
+            }
+        }
+
+        .navbar-burger {
+          display: none;
+        }
+    }
+}
