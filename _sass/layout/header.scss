@@ -1,15 +1,22 @@
 .navbar-seven {
-  background-color: white;
+  background-color: rgba(255,255,255,0);
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: all 0.8s ease;
 
   img {
     width: 237px;
     height: 33px;
     margin: 7px 0;
   }
+}
+
+.navbar-scrolled {
+  background-color: white;
 }
 
 .navbar-links {

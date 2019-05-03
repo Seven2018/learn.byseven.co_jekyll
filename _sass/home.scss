@@ -1,0 +1,348 @@
+// BANNER
+
+.home-banner {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1470110385011-8c66cb46f0e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  overflow-y: scroll;
+  margin-top: -47px;
+
+  @include from-xlarge {
+    background-position: 0 0;
+  }
+}
+
+.home-banner-title {
+  min-height: 35vh;
+  padding: 50px;
+  position: absolute;
+  top: 15%;
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  @include from-large {
+    top: 30%;
+  }
+
+  @include from-xlarge {
+    top: 45%;
+  }
+}
+
+.home-button-discover, .home-button-contact {
+  font-family: "InfoDispBold Roman";
+  width: 180px;
+  color: black;
+  font-size: 16px;
+  padding: 15px;
+  margin: 0 25px;
+  background-color: rgba(254, 197, 84, 1);
+
+  @include from-large {
+    font-size: 24px;
+  }
+}
+
+.home-button-discover {
+  background-color: rgb(254, 197, 84);
+}
+
+.home-button-contact {
+  background-color: rgb(255, 142, 102);
+  padding: 15px 58px;
+}
+
+
+@include from-large {
+  .home-banner-title {
+    padding: 0 180px;
+  }
+  .home-banner-title > h1 {
+    padding: 0 120px;
+  }
+  .home-banner-title > h2 {
+    padding: 0 50px;
+  }
+}
+
+@include from-xlarge {
+  .home-banner-title > h1 {
+    padding: 0 200px;
+  }
+}
+
+//TOP-TRAININGS
+
+.home-top-trainings {
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.home-top-trainings > h2 {
+  margin-bottom: 50px;
+}
+
+.home-training-grid {
+  margin: 0 100px 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  @include from-large {
+    flex-direction: row;
+  }
+}
+
+.home-training-card {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: 40px 0;
+
+  @include from-large {
+    min-height: 35vh;
+    width: 20vw;
+    margin-top: 100px;
+  }
+}
+
+.home-training-card-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 5px solid white;
+  text-align: center;
+  // margin-top: -60px;
+  position: absolute;
+  top: -55px;
+  left: calc(50% - 45px);
+
+  @include from-large {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: -80px;
+    left: calc(50% - 70px);
+  }
+}
+
+.home-training-link1, .home-training-link2, .home-training-link3 {
+  text-decoration: none;
+  background-color: white;
+  width: 80%;
+  padding: 10px 15px;
+  font-family: "InfoDispSemiBold Roman";
+  font-size: 12px;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+
+  @include from-large {
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+  }
+}
+
+.home-training-card-color1, .home-training-card-color2, .home-training-card-color3 {
+  min-height: 100%;
+  width: auto;
+  padding: 50px 20px 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  h3 {
+    font-family: "InfoDispSemiBold Roman";
+    font-size: 16px;
+    margin: 10px 0 0 0;
+  }
+  h4 {
+    font-family: "Infotext Normal";
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  @include from-large {
+    padding-top: 85px;
+    h3 {
+      font-size: 24px;
+      margin: 0;
+    }
+    h4 {
+      font-size: 24px;
+    }
+  }
+}
+
+
+.home-training-card-color1 {
+  background-color: rgb(75, 194, 200);
+  a {
+    color: rgb(75, 194, 200);
+  }
+}
+
+.home-training-card-color2 {
+  background-color: rgb(248, 176, 164);
+  a {
+    color: rgb(248, 176, 164);
+  }
+}
+
+.home-training-card-color3 {
+  background-color: rgb(255, 142, 102);
+  a {
+    color: rgb(255, 142, 102);
+  }
+}
+
+//HOME-SATISFIED
+
+.home-satisfied {
+  background-image: url("/assets/img/FOND_POIS.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-bottom: 30px;
+  float:left;
+  clear:none;
+
+  @include from-large {
+    min-height: 72vh;
+    padding-bottom: 0;
+  }
+}
+
+.home-satisfied-content > h2 {
+  padding: 30px;
+  margin: 0;
+
+  @include from-large {
+  }
+}
+
+.home-satisfied-carousel {
+
+  @include from-large {
+    margin-bottom: 70px;
+  }
+}
+
+.home-satisfied-carousel-card {
+  min-height: 45vh;
+  background-color: white;
+  box-shadow: 3px 3px 10px rgba(136,136,136,0.7);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+
+  @include from-large {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 150px;
+  }
+}
+
+.home-satisfied-carousel-card > img {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.home-satisfied-carousel-card-description {
+  position: relative;
+
+  p {
+    font-family: "InfoDispBook Italic";
+    font-size: 20px;
+  }
+}
+
+.home-satisfied-carousel-card-text {
+  @include from-large {
+    padding: 20px 0 20px 30px;
+  }
+}
+
+.home-satisfied-carousel-card-person {
+  p {
+    margin: 0;
+    font-family: "Infotext Normal";
+    font-size: 20px;
+  }
+
+  @include from-large {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.home-satisfied-carousel-card-name {
+  color: rgb(248, 176, 164);
+}
+
+// CONTACT US
+
+.home-contact-us {
+  background-image: url("/assets/img/FOND_BLEU.png");
+  background-size: cover;
+  background-position: center;
+  padding: 70px;
+  text-align: center;
+  width: 100%;
+  float:left;
+  clear:none;
+
+  @include from-xlarge {
+    min-height: 70vh;
+  }
+}
+
+.home-contact-us > h2 {
+  font-family: "InfoDispBold Roman";
+  font-size: 24px;
+  padding: 0 15%;
+
+  @include from-large {
+    font-size: 40px;
+    padding: 0 28%;
+  }
+}
+
+.home-contact-us > h3 {
+  font-family: "InfoText Normal";
+  font-size: 20px;
+  margin-bottom: 50px;
+
+  @include from-large {
+    font-size: 30px;
+  }
+}
+
+.home-contact-us-buttons {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @include from-large {
+    display: inline;
+    margin-top: 100px;
+    height: auto;
+  }
+}
