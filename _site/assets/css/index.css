@@ -6283,7 +6283,7 @@ button.close {
 /* --- wider screens, from 1280px --- */
 /* --- super wide screens, from 1440px --- */
 .navbar-seven {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
@@ -6316,6 +6316,12 @@ button.close {
   .navbar-burger i {
     font-size: 19px; }
 
+.navbar-burger > button {
+  background-color: white !important;
+  outline-color: white !important; }
+  .navbar-burger > button:focus {
+    outline: 0 !important; }
+
 @media only screen and (min-width: 37.5em) {
   .navbar-seven {
     flex-wrap: nowrap;
@@ -6330,9 +6336,6 @@ button.close {
         font-size: 1.4em; }
     .navbar-seven .navbar-burger {
       display: none; } }
-body {
-  margin: 0; }
-
 .footer {
   min-height: 250px;
   padding: 25px 50px;

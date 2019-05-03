@@ -1,5 +1,6 @@
 .navbar-seven {
-  background-color: rgba(255,255,255,0);
+  // background-color: rgba(255,255,255,0);
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
@@ -39,6 +40,15 @@
 
   i {
     font-size: 19px;
+  }
+}
+
+.navbar-burger > button {
+  background-color: white !important;
+  outline-color: white !important;
+
+  &:focus {
+    outline: 0 !important;
   }
 }
 
