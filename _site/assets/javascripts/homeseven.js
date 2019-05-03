@@ -2,10 +2,10 @@ const initUpdateNavbarOnScroll = () => {
   const navbar = document.querySelector('.navbar-seven');
   if (navbar) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY >= window.innerHeight) {
-        navbar.classList.add('navbar-scrolled');
+      if (window.scrollY >= window.innerHeight*.94) {
+        navbar.classList.add('scrolled');
       } else {
-        navbar.classList.remove('navbar-scrolled');
+        navbar.classList.remove('scrolled');
       }
     });
   }

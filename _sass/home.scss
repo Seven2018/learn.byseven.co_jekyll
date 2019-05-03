@@ -19,13 +19,17 @@
   min-height: 35vh;
   padding: 50px;
   position: absolute;
-  top: 15%;
+  top: 20%;
   h2 {
     margin-bottom: 50px;
   }
 
+  @include from-medium {
+    top: 40%;
+  }
+
   @include from-large {
-    top: 30%;
+    top: 35%;
   }
 
   @include from-xlarge {
@@ -57,6 +61,12 @@
 }
 
 
+@include from-medium {
+  .home-banner-title > h1 {
+    padding: 0 160px;
+  }
+}
+
 @include from-large {
   .home-banner-title {
     padding: 0 180px;
@@ -78,10 +88,13 @@
 //TOP-TRAININGS
 
 .home-top-trainings {
-  min-height: 100vh;
   background-color: white;
   text-align: center;
   padding: 50px;
+
+  @include from-xlarge {
+    height: 100vh;
+  }
 }
 
 .home-top-trainings > h2 {
@@ -217,7 +230,7 @@
   clear:none;
 
   @include from-large {
-    min-height: 72vh;
+    min-height: 60vh;
     padding-bottom: 0;
   }
 }
