@@ -20,7 +20,7 @@
   min-height: 35vh;
   padding: 50px;
   position: absolute;
-  top: 20%;
+  top: 27%;
   h2 {
     margin-bottom: 50px;
   }
@@ -29,12 +29,12 @@
     top: 30%;
   }
 
-  @include from-large {
-    top: 35%;
-  }
+  // @include from-large {
+  //   top: 35%;
+  // }
 
   @include from-xlarge {
-    top: 375px;
+    top: 350px;
   }
 }
 
@@ -235,8 +235,13 @@
 
   @include from-large {
     min-height: 60vh;
+    height: 70vh;
     padding-bottom: 0;
   }
+}
+
+.carousel, .carousel-inner {
+  overflow: visible !important;
 }
 
 .home-satisfied-content > h2 {
@@ -255,9 +260,9 @@
 }
 
 .home-satisfied-carousel-card {
-  min-height: 45vh;
+  min-height: 25vh;
   background-color: white;
-  box-shadow: 3px 3px 10px rgba(136,136,136,0.7);
+  box-shadow: 0px 0px 10px 2px rgba(136,136,136,0.7);
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -273,9 +278,15 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
+
+  @include from-large {
+    height: 200px;
+    width: 200px;
+  }
+
 }
 
 .home-satisfied-carousel-card-description {
@@ -283,7 +294,11 @@
 
   p {
     font-family: "InfoDispBook Italic";
-    font-size: 20px;
+    font-size: 16px;
+
+    @include from-large {
+      font-size: 20px;
+    }
   }
 }
 
@@ -297,7 +312,7 @@
   p {
     margin: 0;
     font-family: "Infotext Normal";
-    font-size: 20px;
+    font-size: 16px;
   }
 
   @include from-large {
@@ -305,6 +320,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    font-size: 20px;
   }
 }
 
