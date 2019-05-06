@@ -18,7 +18,8 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Empowering People & Organizations
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://test.byseven.co # the base hostname & protocol for your site, e.g. http://example.com
+enforce_ssl: test.byseven.co
 
 # Build settings
 markdown: kramdown

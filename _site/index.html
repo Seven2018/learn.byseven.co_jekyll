@@ -10,6 +10,11 @@
     <meta name="keywords" content="">
     <meta name="robots" content="index, follow">
 
+    <script>
+      var host = "test.byseven.co";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+          window.location.protocol = "https";
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -81,8 +86,68 @@
 <div class="home-satisfied">
   <div class="home-satisfied-content">
     <h2>Ils nous font confiance</h2>
-    <div class="home-satisfied-carousel">
-      <div class="home-satisfied-carousel-card">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="home-satisfied-carousel-card">
+            <img src="/assets/img/Yahya.jpeg" alt="">
+            <div class="home-satisfied-carousel-card-description">
+              <p class="home-satisfied-carousel-card-text">"Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla."</p>
+              <div class="home-satisfied-carousel-card-person">
+                <p class="home-satisfied-carousel-card-name">Yahya Beauxcheveux</p>
+                <p class="home-satisfied-carousel-card-jobtitle"><strong>Responsable des ventes chez l'Oréal</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="home-satisfied-carousel-card">
+            <img src="/assets/img/Brice.jpeg" alt="">
+            <div class="home-satisfied-carousel-card-description">
+              <p class="home-satisfied-carousel-card-text">"Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla."</p>
+              <div class="home-satisfied-carousel-card-person">
+                <p class="home-satisfied-carousel-card-name">Brice de Nice</p>
+                <p class="home-satisfied-carousel-card-jobtitle"><strong>Surfeur pro</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="home-satisfied-carousel-card">
+            <img src="/assets/img/Yahya.jpeg" alt="">
+            <div class="home-satisfied-carousel-card-description">
+              <p class="home-satisfied-carousel-card-text">"Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla."</p>
+              <div class="home-satisfied-carousel-card-person">
+                <p class="home-satisfied-carousel-card-name">Yahya Beauxcheveux</p>
+                <p class="home-satisfied-carousel-card-jobtitle"><strong>Responsable des ventes chez l'Oréal</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- <div class="home-satisfied-carousel"> -->
+      <!-- <div class="home-satisfied-carousel-card">
         <img src="/assets/img/Yahya.jpeg" alt="">
         <div class="home-satisfied-carousel-card-description">
           <p class="home-satisfied-carousel-card-text">"Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla. Ma formation avec SEVEN merveilleuse fantastique amazing géniale blablabla."</p>
@@ -91,8 +156,8 @@
             <p class="home-satisfied-carousel-card-jobtitle"><strong>Responsable des ventes chez l'Oréal</strong></p>
           </div>
         </div>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
   </div>
 </div>
 <div class="home-contact-us">
@@ -103,6 +168,7 @@
     <a href="" class="home-button-discover">Découvrez nos formations</a>
   </div>
 </div>
+
 
         </main>
         <div class="footer">

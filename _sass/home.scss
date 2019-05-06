@@ -1,16 +1,17 @@
 // BANNER
 
 .home-banner {
+  min-height: 750px;
   height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1470110385011-8c66cb46f0e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   background-size: cover;
   background-position: center;
   text-align: center;
   position: relative;
-  overflow-y: scroll;
+  overflow: auto;
   margin-top: -47px;
 
-  @include from-xlarge {
+  @include from-large {
     background-position: 0 0;
   }
 }
@@ -19,17 +20,21 @@
   min-height: 35vh;
   padding: 50px;
   position: absolute;
-  top: 15%;
+  top: 27%;
   h2 {
     margin-bottom: 50px;
   }
 
-  @include from-large {
+  @include from-medium {
     top: 30%;
   }
 
+  // @include from-large {
+  //   top: 35%;
+  // }
+
   @include from-xlarge {
-    top: 45%;
+    top: 350px;
   }
 }
 
@@ -57,6 +62,12 @@
 }
 
 
+@include from-medium {
+  .home-banner-title > h1 {
+    padding: 0 160px;
+  }
+}
+
 @include from-large {
   .home-banner-title {
     padding: 0 180px;
@@ -78,10 +89,14 @@
 //TOP-TRAININGS
 
 .home-top-trainings {
-  min-height: 100vh;
   background-color: white;
   text-align: center;
   padding: 50px;
+
+  @include from-xlarge {
+    min-height: 750px;
+    height: 100vh;
+  }
 }
 
 .home-top-trainings > h2 {
@@ -89,7 +104,7 @@
 }
 
 .home-training-grid {
-  margin: 0 100px 50px 100px;
+  margin: 0 100px 70px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,7 +116,7 @@
 }
 
 .home-training-card {
-  height: 200px;
+  min-height: 270px;
   width: 200px;
   position: relative;
   margin: 40px 0;
@@ -153,7 +168,8 @@
 }
 
 .home-training-card-color1, .home-training-card-color2, .home-training-card-color3 {
-  min-height: 100%;
+  min-height: 270px;
+  height: 25vh;
   width: auto;
   padding: 50px 20px 0 20px;
   text-align: center;
@@ -172,6 +188,7 @@
   }
 
   @include from-large {
+    height: 25vh;
     padding-top: 85px;
     h3 {
       font-size: 24px;
@@ -217,9 +234,14 @@
   clear:none;
 
   @include from-large {
-    min-height: 72vh;
+    min-height: 60vh;
+    height: 70vh;
     padding-bottom: 0;
   }
+}
+
+.carousel, .carousel-inner {
+  overflow: visible !important;
 }
 
 .home-satisfied-content > h2 {
@@ -238,9 +260,9 @@
 }
 
 .home-satisfied-carousel-card {
-  min-height: 45vh;
+  min-height: 25vh;
   background-color: white;
-  box-shadow: 3px 3px 10px rgba(136,136,136,0.7);
+  box-shadow: 0px 0px 10px 2px rgba(136,136,136,0.7);
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -256,9 +278,15 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
+
+  @include from-large {
+    height: 200px;
+    width: 200px;
+  }
+
 }
 
 .home-satisfied-carousel-card-description {
@@ -266,7 +294,11 @@
 
   p {
     font-family: "InfoDispBook Italic";
-    font-size: 20px;
+    font-size: 16px;
+
+    @include from-large {
+      font-size: 20px;
+    }
   }
 }
 
@@ -280,7 +312,7 @@
   p {
     margin: 0;
     font-family: "Infotext Normal";
-    font-size: 20px;
+    font-size: 16px;
   }
 
   @include from-large {
@@ -288,6 +320,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    font-size: 20px;
   }
 }
 

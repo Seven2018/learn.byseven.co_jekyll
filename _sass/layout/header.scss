@@ -15,7 +15,7 @@
   }
 }
 
-.navbar-scrolled {
+.scrolled {
   background-color: white;
 }
 
@@ -39,6 +39,15 @@
 
   i {
     font-size: 19px;
+  }
+}
+
+.navbar-burger > button {
+  background-color: rgba(255,255,255,0) !important;
+  outline-color: white !important;
+
+  &:focus {
+    outline: 0 !important;
   }
 }
 
