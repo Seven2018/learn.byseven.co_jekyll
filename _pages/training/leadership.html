@@ -1,0 +1,33 @@
+---
+layout: base
+type: training
+permalink: /training/leadership.html
+title: "Leadership"
+lang: fr
+---
+
+<div class="page-flag content-list-flag">
+  <h2>Nos ateliers en Leadership</h2>
+  <p>“Le leadership est le produit d'une personnalité attachante associée à une force de conviction permettant d'entraîner les autres sur des projets ambitieux.” - Jean-François Rial</p>
+</div>
+<div class="content-list">
+  {% assign contents = site.content %}
+  {% for content in contents %}
+    <div class="content-list-card">
+      <div class="content-list-card-img">
+        <p>image</p>
+      </div>
+      <div class="content-list-card-desc">
+        <a href="{{ content.url }}">{{ content.title }}</a>
+        <p><em>{{content.quote}}
+          </em></p>
+          <br>
+          <p>{{content.teaser1}}
+          <br>
+          <p>{{content.teaser2}}</p>
+      </div>
+
+    </div>
+  {% endfor %}
+</div>
+

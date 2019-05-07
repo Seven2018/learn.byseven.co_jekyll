@@ -340,8 +340,8 @@
   float:left;
   clear:none;
 
-  @include from-xlarge {
-    min-height: 70vh;
+  @include from-large {
+    min-height: calc(100vh - 297px);
   }
 }
 
