@@ -6439,9 +6439,16 @@ p {
       font-size: 20px; } }
 
 .page-flag {
-  padding: 50px; }
-  .page-flag p {
-    max-width: 50vw; }
+  min-height: 45vh;
+  background-image: url("https://images.unsplash.com/photo-1463694775559-eea25626346b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-size: cover;
+  background-position: 0 15%;
+  padding: 97px 50px 50px 50px;
+  margin-top: -47px; }
+  .page-flag h2, .page-flag p {
+    max-width: 50vw;
+    color: white;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); }
 
 .training-list {
   text-align: center;
@@ -6451,4 +6458,44 @@ p {
   height: 200px !important;
   text-align: left;
   background-color: #e1e1e1;
-  box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8); }
+  box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8);
+  margin: 15px 0; }
+  .training-card h3 {
+    margin: 0 0 24px 0; }
+
+.training-category-link {
+  margin-bottom: 24px; }
+
+.training-offer {
+  text-align: center;
+  padding: 50px; }
+
+.content-list-flag {
+  position: relative;
+  text-align: right; }
+  .content-list-flag h2 {
+    position: absolute;
+    bottom: 15px;
+    left: 50px; }
+  .content-list-flag p {
+    float: right; }
+
+.content-list-card {
+  height: auto;
+  border: solid 2px black;
+  margin: 15px 50px;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 64em) {
+    .content-list-card {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.content-list-card-img {
+  width: 50%; }
+
+.content-list-card-desc {
+  width: 50%;
+  padding: 20px; }
+  .content-list-card-desc p {
+    font-size: 14px; }
