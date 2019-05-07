@@ -39,7 +39,7 @@
   margin: 10px 0;
 
   @include from-medium {
-    width: 15%;
+    width: auto;
     text-align: left;
   }
 }
@@ -69,14 +69,24 @@
     font-size: 18px;
     margin: 20px 0;
   }
-  p {
+  p, a {
     font-family: "InfoDispBook Roman";
+    font-size: 16px;
 
-    @include from-medium {
+    @include from-large {
       width: auto;
+      font-size: 20px;
     }
   }
-  a {
-    font-family: "InfoDispBook Roman";
+  a:hover {
+    color: rgb(51, 51, 51);
+  }
+}
+
+.seven-main-link > h3 {
+  color: rgb(51, 51, 51);
+  width: auto;
+  &:hover {
+    color: black;
   }
 }

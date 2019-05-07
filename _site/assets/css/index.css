@@ -6357,7 +6357,7 @@ button.close {
   margin: 10px 0; }
   @media only screen and (min-width: 37.5em) {
     .footer-categories {
-      width: 15%;
+      width: auto;
       text-align: left; } }
 
 .footer-links {
@@ -6378,13 +6378,21 @@ button.close {
 .footer-main h4, .footer-categories h4 {
   font-size: 18px;
   margin: 20px 0; }
-.footer-main p, .footer-categories p {
-  font-family: "InfoDispBook Roman"; }
-  @media only screen and (min-width: 37.5em) {
-    .footer-main p, .footer-categories p {
-      width: auto; } }
-.footer-main a, .footer-categories a {
-  font-family: "InfoDispBook Roman"; }
+.footer-main p, .footer-main a, .footer-categories p, .footer-categories a {
+  font-family: "InfoDispBook Roman";
+  font-size: 16px; }
+  @media only screen and (min-width: 64em) {
+    .footer-main p, .footer-main a, .footer-categories p, .footer-categories a {
+      width: auto;
+      font-size: 20px; } }
+.footer-main a:hover, .footer-categories a:hover {
+  color: #333333; }
+
+.seven-main-link > h3 {
+  color: #333333;
+  width: auto; }
+  .seven-main-link > h3:hover {
+    color: black; }
 
 .home-banner {
   min-height: 750px;
@@ -6644,9 +6652,9 @@ button.close {
   width: 100%;
   float: left;
   clear: none; }
-  @media only screen and (min-width: 80em) {
+  @media only screen and (min-width: 64em) {
     .home-contact-us {
-      min-height: 70vh; } }
+      min-height: calc(100vh - 297px); } }
 
 .home-contact-us > h2 {
   font-family: "InfoDispBold Roman";
