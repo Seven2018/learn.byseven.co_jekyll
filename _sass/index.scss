@@ -23,12 +23,25 @@ h2 {
     font-size: 20px;
 
     @include from-medium {
-      font-size: 28px
+      font-size: 24px
     }
 
     @include from-large {
       font-size: 30px;
     }
+}
+
+h3 {
+  font-family: "Infotext Normal";
+  font-size: 16px;
+
+  @include from-medium {
+    font-size: 20px;
+  }
+
+  @include from-large {
+    font-size: 24px;
+  }
 }
 
 a {
@@ -40,3 +53,11 @@ a {
   }
 }
 
+p {
+  font-family: "InfoText Normal";
+  font-size: 16px;
+
+  @include from-large {
+    font-size: 20px;
+  }
+}
