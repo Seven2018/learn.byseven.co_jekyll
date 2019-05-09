@@ -3,7 +3,7 @@ layout: base
 type: content
 permalink: "/content/etre-inspire-et-inspirant/"
 title: ÊTRE INSPIRÉ ET INSPIRANT
-image: etre-efficient-les-7-lois-du-temps.jpg
+image: https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80
 quote: "“People don’t buy what you do, they buy why you do it.”
  – Simon Sinek"
 teaser1: "Construit à partir de  la théorie des Golden Circles de Simon Sinek, cet atelier s’adresse aux équipes qui souhaitent travailler sur la vision de leur projet, de leur entreprise, en identifiant les valeurs qui les inspirent individuellement et collectivement et en construisant le message correspondant."

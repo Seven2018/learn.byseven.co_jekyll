@@ -11,15 +11,7 @@ const initUpdateNavbarOnScroll = () => {
       });
     }
   } else {
-    if (navbar) {
-      window.addEventListener('scroll', () => {
-        if (window.scrollY >= window.innerHeight*.39) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      })
-    }
+    navbar.classList.add('scrolled');
   }
 }
 
