@@ -16,8 +16,9 @@ lang: fr
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <div class="training-card">
+          <a href="/training/leadership.html" class="training-link"></a>
           <div class="training-card-img"></div>
-          <div class="training-card-description1">
+          <div class="training-card-description">
             <h3><a href="/training/leadership.html" class="training-category-link">LEADERSHIP</a></h3>
             <p>Définir une vision et engager ses collaborateurs</p>
           </div>
@@ -26,7 +27,7 @@ lang: fr
       <div class="col-xs-12 col-sm-6">
         <div class="training-card">
           <div class="training-card-img"></div>
-          <div class="training-card-description2">
+          <div class="training-card-description">
             <h3><a href="/training/team-management.html" class="training-category-link">GESTION D'EQUIPE</a></h3>
             <p>Construire un collectif et faire grandir ces équipes</p>
           </div>
@@ -35,7 +36,7 @@ lang: fr
       <div class="col-xs-12 col-sm-6">
         <div class="training-card">
           <div class="training-card-img"></div>
-          <div class="training-card-description2 color-change">
+          <div class="training-card-description color-change">
             <h3><a href="/training/communication.html" class="training-category-link">COMMUNICATION</a></h3>
             <p>Prendre la parole en publique et communiquer efficacement en interne/externe</p>
           </div>
@@ -44,7 +45,7 @@ lang: fr
       <div class="col-xs-12 col-sm-6">
         <div class="training-card">
           <div class="training-card-img"></div>
-          <div class="training-card-description1  color-change">
+          <div class="training-card-description  color-change">
             <h3><a href="/training/business-developement.html" class="training-category-link">BUSINESS DEVELOPEMENT</a></h3>
             <p>Créer une relation de confiance et développer ensemble</p>
           </div>
@@ -53,7 +54,7 @@ lang: fr
       <div class="col-xs-12 col-sm-6">
         <div class="training-card">
           <div class="training-card-img"></div>
-          <div class="training-card-description1">
+          <div class="training-card-description">
             <h3><a href="/training/project-management.html" class="training-category-link">GESTION DE PROJET</a></h3>
             <p>Piloter efficacement et gérer le changement et rester créatif pour trouver des solutions</p>
           </div>
@@ -62,7 +63,7 @@ lang: fr
       <div class="col-xs-12 col-sm-6">
         <div class="training-card">
           <div class="training-card-img"></div>
-          <div class="training-card-description2">
+          <div class="training-card-description">
             <h3><a href="/training/economic-intelligence.html" class="training-category-link">INTELLIGENCE ECONOMIQUE</a></h3>
             <p>Rester en éveil, analyser, comprendre, identifier, agir et réagir</p>
           </div>
@@ -71,7 +72,7 @@ lang: fr
       <div class="col-xs-12 col-sm-6">
         <div class="training-card">
           <div class="training-card-img"></div>
-          <div class="training-card-description2  color-change">
+          <div class="training-card-description  color-change">
             <h3><a href="/training/team-building.html" class="training-category-link">TEAM BUILDING</a></h3>
             <p>Construire un collectif et prendre du plaisir</p>
           </div>
@@ -80,7 +81,7 @@ lang: fr
       <div class="col-xs-12 col-sm-6">
         <div class="training-card">
           <div class="training-card-img"></div>
-          <div class="training-card-description1  color-change">
+          <div class="training-card-description  color-change">
             <h3>VOTRE THEME</h3>
             <p>Définissons ensemble les nouveaux thèmes que vous souhaitez aborder tout en profitant de l’expérience et de la méthode Seven</p>
           </div>
@@ -93,7 +94,14 @@ lang: fr
   <div>
     <h2><strong>Vous souhaitez mettre en place un programme de formations personnalisé pour vos équipes et vos collaborateurs ?</strong></h2>
     <h3>Nous sommes passionés par l'ingénierie pédagogique</h3>
-    <a href="" class="home-button-discover">Echangeons ensemble</a>
+    <a href="" class="home-button-discover" data-toggle='modal' data-target='#contactUs'>Echangeons ensemble</a>
   </div>
 </div>
-<script src='/assets/javascripts/resize.js'></script>
+<!-- <script src='/assets/javascripts/resize.js'></script> -->
+
+<!-- Modal -->
+<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    {% include contact-modal.html %}
+  </div>
+</div>

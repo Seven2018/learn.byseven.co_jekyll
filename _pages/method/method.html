@@ -6,9 +6,57 @@ title: "Méthode"
 lang: fr
 ---
 
-<div class="page-flag method-flag">
+<div class="method-flag">
+  <h2>La Méthode</h2>
+  <p>“L’éducation est ce qui subsiste lorsque ce qui a été appris a été oublié.</p>
+</div>
+<div class="method-main-text">
+  <div>
+    <h3>LE RYTHME</h3>
+    <p>Chez SEVEN, nous sommes convaincus qu’apprendre en continu est le meilleur moyen d’entreprendre son avenir. Grâce à une pédagogie rythmée et innovante, nous partageons avec les personnes des connaissances qu’ils ne pourront jamais oublier.
+    Nous apportons créativité et passion grâce à des formations rythmées aussi bien sur les compétences comportementales / émotionnelles / relationnelles, appelées soft skills que sur les compétences démontrables / techniques connues sous le nom de hard skills. Notre objectif est d’aider les organisations à améliorer leur capital humain.
+    </p>
+    <br>
+    <h3>LES INTELLIGENCES MULTIPLES</h3>
+    <p>Des formations innovantes, rythmées qui mobilisent les 7 types d’intelligences de vos stagiaires. Une haute expertise académique et appliquée  en  ventes, négociation, management et développement personnel. Des formations sur-mesure réalisées en collaboration avec vos équipes. Des contenus de formation  libres de droit.</p>
+    <br>
+    <p>Une passion débordante pour le développement personnel, la performance collective et la pédagogie.</p>
+  </div>
+</div>
 
-<div class="method-main">
-
+<div class="method-team">
+  <div class="container">
+    <h2 style="font-family: 'InfoDispBold Roman';">L'Equipe</h2>
+    <div class='method-team-presentation'>
+      <p>Au fil de son histoire, Seven a constitué une communauté de 55 formateurs et experts passionnés et passionnants. Cette diversité de profils permet de constituer des équipes à chaque fois uniques pour animer les formations les plus créatives et ludiques.</p>
+      <br>
+      <p>Voici quelques un(e)s de nos Seveners :</p>
+    </div>
+  </div>
+  <div class="method-team-grid container">
+    <div class="row">
+      {% assign persons = site.people | sort: 'order' %}
+      {% for person in persons %}
+        <div class="col-xs-12 col-md-6">
+          <div class="method-team-card">
+            <img src="{{person.photo}}" class='method-team-avatar'>
+            <div class="method-team-card-text">
+              <div class="method-team-card-name">
+                <h3>{{person.name}}</h3>
+                <div>
+                  <i class="fas fa-circle" style="color: {{person.colorone}}"></i>
+                  <i class="fas fa-circle" style="color: {{person.colortwo}}"></i>
+                  <i class="fas fa-circle" style="color: {{person.colorthree}}"></i>
+                </div>
+              </div>
+              <p class="method-team-card-tags">{{person.tags}}</p>
+              <br>
+              <p class="method-card-team-bio">{{person.bio}}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 

@@ -47,7 +47,7 @@ h3 {
 a {
   color: black;
   font-family: "InfoDispSemiBold Roman";
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
     color: black;
   }

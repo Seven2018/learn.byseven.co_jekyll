@@ -6685,6 +6685,13 @@ button.close {
       margin-top: 100px;
       height: auto; } }
 
+.contact-button {
+  background-color: rgba(58, 162, 172, 0.7);
+  font-family: 'InfoDispBold Roman';
+  border: none; }
+  .contact-button:hover {
+    background-color: #3aa2ac; }
+
 h1 {
   font-family: "InfoDispBold Roman";
   font-size: 24px; }
@@ -6718,7 +6725,7 @@ h3 {
 a {
   color: black;
   font-family: "InfoDispSemiBold Roman"; }
-  a:hover {
+  a:hover, a:focus {
     text-decoration: none;
     color: black; }
 

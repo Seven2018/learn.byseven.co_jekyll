@@ -3,7 +3,7 @@ layout: base
 type: content
 permalink: "/content/prendre-la-parole-en-public/"
 title: 'PRENDRE LA PAROLE EN PUBLIC'
-image: manager-leader-etre-inspire-inspirant.jpg
+image: https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60
 quote: "“Le trac, cela vient avec le talent.”
  – Sarah Bernhardt"
 teaser1: "Des règles précises régissent le fonctionnement d’une prise de parole en public, a l’instar du « menu entrée-plat-dessert »."

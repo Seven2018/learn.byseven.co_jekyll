@@ -1,14 +1,135 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 //FLAG
 
 .method-flag {
-  p {
-    width: 450px;
+  padding: 50px;
+  background-color: rgb(166, 198, 226);
+  background-image: url('/assets/img/expertise_background2.png');
+  background-size: cover;
+  background-position: (0, 50%);
+
+
+  h2, p {
+    width: 50vw;
+    color: white;
   }
 }
 
-// MAIN
+.method-main-text {
+  background-color: rgb(237, 246, 255);
+  display: flex;
+  justify-content: center;
 
-.method-main {
-  background-color: rgb(251, 247, 235);
+  div {
+    background-color: white;
+    margin: 60px auto;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 2px rgba(136,136,136,0.7);
+  }
+
+  div > p {
+    width: 75vw;
+  }
+}
+
+// TEAM
+
+.method-team {
+  background-image: url('/assets/img/FOND_POIS.png');
+  background-repeat: repeat;
+  padding: 10px;
   text-align: center;
+
+  @include from-medium {
+    padding: 50px;
+  }
+}
+
+.method-team-presentation {
+  text-align: left;
+
+  h2 {
+    font-family: 'InfoDispBold Roman';
+  }
+
+  @include from-large {
+    margin: 0 55px;
+  }
+}
+
+.method-team-grid {
+  margin: auto;
+  width: 100%;
+
+
+  @include from-large {
+    padding: 0 100px;
+  }
+}
+
+// CARD
+
+.method-team-card {
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(136,136,136,0.8);
+  padding: 30px;
+  margin: 20px 0;
+
+  @include from-medium {
+    margin: 40px 60px;
+  }
+}
+
+.method-team-avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+
+  @include from-large {
+    height: 200px;
+    width: 200px;
+  }
+
+  @include from-xlarge {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.method-team-card-text {
+  text-align: left;
+  padding-top: 20px;
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.method-team-card-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    font-family: 'InfoDispBold Roman';
+    margin: 0;
+    color: rgb(75, 194, 200);
+  }
+
+  div > i {
+    @include text-shadow;
+    margin: 0 5px;
+  }
+}
+
+.method-team-card-tags {
+  font-family: 'InfoDispBook Italic';
 }

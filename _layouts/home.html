@@ -108,8 +108,14 @@ layout : base
   <h2>Vous souhaitez mettre en place des formations pour vos collaborateurs ?</h2>
   <h3>Nous avons une équipe de 55 experts et formateurs passionnés</h3>
   <div class="home-contact-us-buttons">
-    <a href="" class="home-button-contact">Contactez-nous</a>
+    <a href="" class="home-button-contact" data-toggle='modal' data-target='#contactUs'>Contactez-nous</a>
     <a href="" class="home-button-discover">Découvrez nos formations</a>
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    {% include contact-modal.html %}
+  </div>
+</div>
