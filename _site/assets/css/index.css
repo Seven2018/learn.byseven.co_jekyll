@@ -6479,10 +6479,10 @@ button.close {
       flex-direction: row; } }
 
 .home-training-card {
-  min-height: 270px;
+  height: 200px;
   width: 200px;
   position: relative;
-  margin: 40px 0; }
+  margin: 80px 0 20px 0; }
   @media only screen and (min-width: 64em) {
     .home-training-card {
       min-height: 35vh;
@@ -6524,7 +6524,7 @@ button.close {
       left: 10%; } }
 
 .home-training-card-color1, .home-training-card-color2, .home-training-card-color3 {
-  min-height: 270px;
+  min-height: 200px;
   height: 25vh;
   width: auto;
   padding: 50px 20px 0 20px;
@@ -6542,6 +6542,7 @@ button.close {
     margin-top: 0; }
   @media only screen and (min-width: 64em) {
     .home-training-card-color1, .home-training-card-color2, .home-training-card-color3 {
+      min-height: 270px;
       height: 25vh;
       padding-top: 85px; }
       .home-training-card-color1 h3, .home-training-card-color2 h3, .home-training-card-color3 h3 {

@@ -116,10 +116,10 @@
 }
 
 .home-training-card {
-  min-height: 270px;
+  height: 200px;
   width: 200px;
   position: relative;
-  margin: 40px 0;
+  margin: 80px 0 20px 0;
 
   @include from-large {
     min-height: 35vh;
@@ -168,7 +168,7 @@
 }
 
 .home-training-card-color1, .home-training-card-color2, .home-training-card-color3 {
-  min-height: 270px;
+  min-height: 200px;
   height: 25vh;
   width: auto;
   padding: 50px 20px 0 20px;
@@ -188,6 +188,7 @@
   }
 
   @include from-large {
+    min-height: 270px;
     height: 25vh;
     padding-top: 85px;
     h3 {
