@@ -1,15 +1,24 @@
 // FLAG
 
 .page-flag {
-  min-height: 45vh;
+  min-height: 350px;
+  height: 45vh;
   background-image: url("https://images.unsplash.com/photo-1463694775559-eea25626346b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   background-size: cover;
   background-position: 0 15%;
   padding: 97px 50px 50px 50px;
+  overflow: hidden;
   h2, p {
-    max-width: 50vw;
     color: white;
     @include text-shadow;
+
+    @include from-medium {
+      max-width: 55vw;
+    }
+  }
+
+  @include from-large {
+    height: 50vh;
   }
 }
 
@@ -18,8 +27,12 @@
 
 .training-list {
   text-align: center;
-  padding: 50px;
+  padding: 70px 50px;
   background-color: rgb(251, 247, 235);
+
+  .container {
+    margin-top: 60px;
+  }
 }
 
 .training-card {
@@ -27,7 +40,7 @@
   text-align: left;
   background-color: white;
   box-shadow: 2px 2px 10px rgba(136,136,136,0.8);
-  margin: 15px 0;
+  margin: 20px 5px;
   transition: all 0.8s ease;
   &:hover {
     transform: scale(1.02);
@@ -123,11 +136,12 @@
   background-color: rgb(251, 247, 235);
   padding: 20px;
   h2 {
-    font-family: 'InfoDispBold Roman';
+    // font-family: 'InfoDispBold Roman';
+    margin-bottom: 70px !important;
   }
 
   @include from-large {
-    padding: 50px;
+    padding: 70px 50px;
   }
 }
 
@@ -138,10 +152,10 @@
 }
 
 .content-list-card {
-  margin: 30px auto;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 10px rgba(136,136,136,0.8);
+  // box-shadow: 2px 2px 10px rgba(136,136,136,0.8);
   width: 80vw;
 
   @include from-large {

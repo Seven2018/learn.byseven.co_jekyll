@@ -134,7 +134,6 @@
   border-radius: 100%;
   border: 5px solid white;
   text-align: center;
-  // margin-top: -60px;
   position: absolute;
   top: -55px;
   left: calc(50% - 45px);
@@ -239,6 +238,10 @@
     height: 70vh;
     padding-bottom: 0;
   }
+}
+
+.carousel-inner {
+  padding: 0 15px;
 }
 
 .carousel, .carousel-inner {

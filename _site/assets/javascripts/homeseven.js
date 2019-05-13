@@ -1,6 +1,6 @@
 const initUpdateNavbarOnScroll = () => {
   const navbar = document.querySelector('.navbar-seven');
-  if (window.location.href === "http://localhost:4000/") {
+  if (window.location.href === "https://test.byseven.co/") {
     if (navbar) {
       window.addEventListener('scroll', () => {
         if (window.scrollY >= window.innerHeight*.94) {

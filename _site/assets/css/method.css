@@ -6275,11 +6275,11 @@ button.close {
   flex-wrap: wrap;
   padding: 0 20px;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 10;
   transition: all 0.8s ease; }
   .navbar-seven img {
-    width: 237px;
     height: 33px;
     margin: 7px 0; }
 
@@ -6330,35 +6330,63 @@ button.close {
   display: flex;
   justify-content: space-between;
   flex-direction: column; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 64em) {
     .footer {
       flex-direction: row; } }
 
 .footer-main {
   text-align: center;
   margin: 10px 0; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 64em) {
     .footer-main {
       display: block;
       width: 20%;
-      text-align: left; } }
+      text-align: left;
+      padding-right: 20px;
+      border-right: 3px solid #333333; } }
 
 .footer-main > p {
   margin: 0 auto;
   text-align: center; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 64em) {
     .footer-main > p {
       text-align: left; } }
+
+.footer-categories-container {
+  display: grid; }
+  @media only screen and (min-width: 64em) {
+    .footer-categories-container {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+      width: 80%; } }
 
 .footer-categories {
   width: auto;
   height: auto;
   text-align: center;
   margin: 10px 0; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 64em) {
     .footer-categories {
-      width: auto;
-      text-align: left; } }
+      width: 200px;
+      text-align: left;
+      padding-left: 60px; } }
+
+#footer-categories1 {
+  grid-column: 1;
+  grid-row: 1; }
+
+#footer-categories2 {
+  grid-column: 2;
+  grid-row: 1; }
+
+#footer-categories3 {
+  grid-column: 1;
+  grid-row: 2; }
+
+#footer-categories4 {
+  grid-column: 2;
+  grid-row: 2; }
 
 .footer-links {
   display: flex;
@@ -6446,24 +6474,40 @@ html, body {
   overflow-x: hidden; }
 
 .method-flag {
+  min-height: 350px;
+  height: 50vh;
   padding: 50px;
   background-color: #a6c6e2;
   background-image: url("/assets/img/expertise_background2.png");
   background-size: cover;
-  background-position: 0, 50%; }
-  .method-flag h2, .method-flag p {
+  background-position: 0, 50%;
+  position: relative; }
+  .method-flag p {
     width: 50vw;
     color: white; }
+  .method-flag img {
+    width: 100px;
+    position: absolute;
+    bottom: 50px;
+    left: 70px; }
+    @media only screen and (min-width: 37.5em) {
+      .method-flag img {
+        width: 145px; } }
 
 .method-main-text {
   background-color: #edf6ff;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  .method-main-text h2 {
+    margin-top: 94.9px; }
   .method-main-text div {
     background-color: white;
     margin: 60px auto;
     padding: 30px;
-    box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.7); }
+    box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.7);
+    text-align: left; }
   .method-main-text div > p {
     width: 75vw; }
 
@@ -6474,12 +6518,15 @@ html, body {
   text-align: center; }
   @media only screen and (min-width: 37.5em) {
     .method-team {
-      padding: 50px; } }
+      padding: 70px 50px; } }
+  .method-team .container > h2 {
+    margin-bottom: 94.9px;
+    font-family: 'InfoText Normal' !important; }
 
 .method-team-presentation {
   text-align: left; }
   .method-team-presentation h2 {
-    font-family: 'InfoDispBold Roman'; }
+    margin-top: 94.9px; }
   @media only screen and (min-width: 64em) {
     .method-team-presentation {
       margin: 0 55px; } }
@@ -6496,9 +6543,10 @@ html, body {
   box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8);
   padding: 30px;
   margin: 20px 0; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 64em) {
     .method-team-card {
-      margin: 40px 60px; } }
+      margin: 40px 60px;
+      min-width: 350px; } }
 
 .method-team-avatar {
   height: 150px;
@@ -6526,7 +6574,7 @@ html, body {
   .method-team-card-name h3 {
     font-family: 'InfoDispBold Roman';
     margin: 0;
-    color: #4bc2c8; }
+    color: #739dbf; }
   .method-team-card-name div > i {
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
     margin: 0 5px; }
@@ -6535,27 +6583,36 @@ html, body {
   font-family: 'InfoDispBook Italic'; }
 
 .page-flag {
-  min-height: 45vh;
+  min-height: 350px;
+  height: 45vh;
   background-image: url("https://images.unsplash.com/photo-1463694775559-eea25626346b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   background-size: cover;
   background-position: 0 15%;
-  padding: 97px 50px 50px 50px; }
+  padding: 97px 50px 50px 50px;
+  overflow: hidden; }
   .page-flag h2, .page-flag p {
-    max-width: 50vw;
     color: white;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); }
+    @media only screen and (min-width: 37.5em) {
+      .page-flag h2, .page-flag p {
+        max-width: 55vw; } }
+  @media only screen and (min-width: 64em) {
+    .page-flag {
+      height: 50vh; } }
 
 .training-list {
   text-align: center;
-  padding: 50px;
+  padding: 70px 50px;
   background-color: #fbf7eb; }
+  .training-list .container {
+    margin-top: 60px; }
 
 .training-card {
   height: 400px !important;
   text-align: left;
   background-color: white;
   box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8);
-  margin: 15px 0;
+  margin: 20px 5px;
   transition: all 0.8s ease; }
   .training-card:hover {
     transform: scale(1.02);
@@ -6629,19 +6686,18 @@ html, body {
   background-color: #fbf7eb;
   padding: 20px; }
   .content-list h2 {
-    font-family: 'InfoDispBold Roman'; }
+    margin-bottom: 70px !important; }
   @media only screen and (min-width: 64em) {
     .content-list {
-      padding: 50px; } }
+      padding: 70px 50px; } }
 
 .content-list-flag p {
   width: 450px; }
 
 .content-list-card {
-  margin: 30px auto;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8);
   width: 80vw; }
   @media only screen and (min-width: 64em) {
     .content-list-card {
@@ -6861,6 +6917,9 @@ html, body {
       min-height: 60vh;
       height: 70vh;
       padding-bottom: 0; } }
+
+.carousel-inner {
+  padding: 0 15px; }
 
 .carousel, .carousel-inner {
   overflow: visible !important; }

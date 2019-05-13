@@ -4,12 +4,12 @@
   flex-wrap: wrap;
   padding: 0 20px;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 10;
   transition: all 0.8s ease;
 
   img {
-    width: 237px;
     height: 33px;
     margin: 7px 0;
   }
