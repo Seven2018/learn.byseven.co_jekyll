@@ -6476,7 +6476,7 @@ html, body {
 .method-flag {
   min-height: 350px;
   height: 50vh;
-  padding: 50px;
+  padding: 97px 50px 50px 50px;
   background-color: #a6c6e2;
   background-image: url("/assets/img/expertise_background2.png");
   background-size: cover;
@@ -6508,8 +6508,21 @@ html, body {
     padding: 30px;
     box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.7);
     text-align: left; }
+    @media only screen and (min-width: 64em) {
+      .method-main-text div {
+        margin: 60px 200px; } }
   .method-main-text div > p {
-    width: 75vw; }
+    margin: 0; }
+
+.method-intro, .method-titles {
+  font-weight: bold; }
+
+.method-titles {
+  color: #739dbe; }
+
+.method-italics {
+  font-family: 'InfoTextRegular Italic';
+  color: #739dbe; }
 
 .method-team {
   background-image: url("/assets/img/FOND_POIS.png");
@@ -6524,7 +6537,7 @@ html, body {
     font-family: 'InfoText Normal' !important; }
 
 .method-team-presentation {
-  text-align: left; }
+  text-align: center; }
   .method-team-presentation h2 {
     margin-top: 94.9px; }
   @media only screen and (min-width: 64em) {
@@ -6539,7 +6552,7 @@ html, body {
       padding: 0 100px; } }
 
 .method-team-card {
-  background-color: white;
+  background-color: #f6f6f6;
   box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8);
   padding: 30px;
   margin: 20px 0; }
@@ -6576,7 +6589,6 @@ html, body {
     margin: 0;
     color: #739dbf; }
   .method-team-card-name div > i {
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
     margin: 0 5px; }
 
 .method-team-card-tags {
@@ -6605,13 +6617,14 @@ html, body {
   padding: 70px 50px;
   background-color: #fbf7eb; }
   .training-list .container {
-    margin-top: 60px; }
+    margin-top: 60px;
+    padding: 0 20px; }
 
 .training-card {
   height: 400px !important;
   text-align: left;
   background-color: white;
-  box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8);
+  box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.4);
   margin: 20px 5px;
   transition: all 0.8s ease; }
   .training-card:hover {
@@ -6621,10 +6634,7 @@ html, body {
       color: white; }
 
 .training-card-img {
-  height: 250px;
-  background-image: url("https://images.unsplash.com/photo-1418225162054-0f773a996f9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1658&q=80");
-  background-size: cover;
-  position: relative; }
+  height: 250px; }
 
 .training-card-description {
   height: 150px;
@@ -6644,13 +6654,14 @@ html, body {
   margin-bottom: 24px; }
 
 .training-link {
-  height: 100%;
+  height: 400px;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0; }
 
 .offer {
+  min-height: calc(100vh - 297px);
   background-image: url("/assets/img/MONTAGNES_JAUNES.png");
   background-size: cover;
   background-position: center;
@@ -6662,10 +6673,15 @@ html, body {
     .offer {
       min-height: calc(100vh - 297px); } }
 
+@media only screen and (min-width: 80em) {
+  .offer > div {
+    min-height: calc(100vh - 497px); } }
+
 .offer > div > h2 {
   font-family: "InfoDispBold Roman";
   font-size: 24px;
-  padding: 0 15%; }
+  padding: 0 15%;
+  margin-top: 0; }
   @media only screen and (min-width: 64em) {
     .offer > div > h2 {
       font-size: 32px;
@@ -6674,7 +6690,7 @@ html, body {
 .offer > div > h3 {
   font-family: "InfoText Normal";
   font-size: 20px;
-  margin: 50px 0 50px 0;
+  margin: 30px 0 30px 0;
   padding: 0 15%; }
   @media only screen and (min-width: 64em) {
     .offer > div > h3 {
@@ -6909,7 +6925,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding-bottom: 30px;
+  padding: 0 15px 30px 15px;
   float: left;
   clear: none; }
   @media only screen and (min-width: 64em) {
@@ -6918,11 +6934,11 @@ html, body {
       height: 70vh;
       padding-bottom: 0; } }
 
-.carousel-inner {
-  padding: 0 15px; }
-
 .carousel, .carousel-inner {
   overflow: visible !important; }
+
+.home-satisfied-content {
+  height: 100%; }
 
 .home-satisfied-content > h2 {
   padding: 30px;
@@ -6934,6 +6950,7 @@ html, body {
 
 .home-satisfied-carousel-card {
   min-height: 25vh;
+  width: auto;
   background-color: white;
   box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.7);
   display: flex;

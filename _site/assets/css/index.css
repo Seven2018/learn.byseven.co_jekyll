@@ -6599,7 +6599,7 @@ button.close {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding-bottom: 30px;
+  padding: 0 15px 30px 15px;
   float: left;
   clear: none; }
   @media only screen and (min-width: 64em) {
@@ -6608,11 +6608,11 @@ button.close {
       height: 70vh;
       padding-bottom: 0; } }
 
-.carousel-inner {
-  padding: 0 15px; }
-
 .carousel, .carousel-inner {
   overflow: visible !important; }
+
+.home-satisfied-content {
+  height: 100%; }
 
 .home-satisfied-content > h2 {
   padding: 30px;
@@ -6624,6 +6624,7 @@ button.close {
 
 .home-satisfied-carousel-card {
   min-height: 25vh;
+  width: auto;
   background-color: white;
   box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.7);
   display: flex;

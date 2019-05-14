@@ -12,11 +12,11 @@ lang: fr
 </div>
 <div class="content-list">
   <h2>Nos ateliers en {{page.title}}</h2>
-  {% assign contents = site.content| where: 'categories', 'business-developement' %}
+  {% assign contents = site.content| where: 'categories', 'business-developement' | sort: 'order' %}
   {% for content in contents %}
     <div class="content-list-card">
       <div class="content-list-card-img">
-        <img src="{{content.image}}" alt="" style="height:100%;width:100%;">
+        <div style="height:100%;width:100%;background-image:url({{content.image}});background-size:cover;background-position:center;"></div>
       </div>
       <div class="content-list-card-desc">
         <div class="content-list-card-text">
