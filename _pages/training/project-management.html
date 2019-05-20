@@ -15,6 +15,7 @@ lang: fr
   {% assign contents = site.content| where: 'categories', 'project-management' | sort: 'order' %}
   {% for content in contents %}
     <div class="content-list-card">
+      <a href="" class="content-list-card-linkto" id="{{content.title}}"></a>
       <div class="content-list-card-img">
         <div style="height:100%;width:100%;background-image:url({{content.image}});background-size:cover;background-position:center;"></div>
       </div>
@@ -34,14 +35,12 @@ lang: fr
   {% endfor %}
 </div>
 <div class="training-offer offer">
-  <div>
     <h2><strong>Vous pensez des ateliers et modules de formation spécifiques à intégrer à votre programme ?</strong></h2>
     <h3>Nous concevons et alimentons soigneusement notre propre galerie d’ateliers.
     Nous voulons faire de cette collection un ensemble cohérent, connecté et évolutif de ressources.
     Dites nous votre besoin et explorons les possibilités.
     </h3>
-    <a href="" class="home-button-discover" data-toggle='modal' data-target='#contactUs'>Echangeons ensemble</a>
-  </div>
+    <div><a href="" class="home-button-discover" data-toggle='modal' data-target='#contactUs'>Echangeons ensemble</a></div>
 </div>
 
 <!-- Modal -->

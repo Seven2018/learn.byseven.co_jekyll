@@ -2,7 +2,7 @@
 layout: base
 type: content
 permalink: "/content/manager-selon-la-situation/"
-title: SAVOIR ÉCOUTER
+title: MANAGER SELON LA SITUATION
 image: "/assets/img/manager-selon-la-situation.jpg"
 order: 3
 quote: "L’état de maturité des individus, des groupes et la situation sont les 3 composantes d’un management situationnel efficace."

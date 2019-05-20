@@ -6280,7 +6280,7 @@ button.close {
   z-index: 10;
   transition: all 0.8s ease; }
   .navbar-seven img {
-    height: 33px;
+    width: 150px;
     margin: 7px 0; }
 
 .scrolled {
@@ -6486,7 +6486,8 @@ p {
         max-width: 55vw; } }
   @media only screen and (min-width: 64em) {
     .page-flag {
-      height: 50vh; } }
+      height: 50vh;
+      max-height: 450px; } }
 
 .training-list {
   text-align: center;
@@ -6537,41 +6538,39 @@ p {
   left: 0; }
 
 .offer {
-  min-height: calc(100vh - 297px);
   background-image: url("/assets/img/MONTAGNES_JAUNES.png");
   background-size: cover;
   background-position: center;
+  padding: 100px;
   text-align: center;
+  width: 100%;
+  float: left;
+  clear: none;
   display: flex;
-  align-items: center;
-  padding: 50px; }
+  flex-direction: column; }
   @media only screen and (min-width: 80em) {
     .offer {
-      min-height: calc(100vh - 297px); } }
+      min-height: calc(100vh - 300.8px);
+      max-height: 600px; } }
 
-@media only screen and (min-width: 80em) {
-  .offer > div {
-    min-height: calc(100vh - 497px); } }
+.offer > div {
+  margin: 30px 0 20px 0; }
 
-.offer > div > h2 {
+.offer > h2 {
   font-family: "InfoDispBold Roman";
   font-size: 24px;
-  padding: 0 15%;
-  margin-top: 0; }
+  margin: 0 0 30px 0; }
   @media only screen and (min-width: 64em) {
-    .offer > div > h2 {
-      font-size: 32px;
-      padding: 0 28%; } }
+    .offer > h2 {
+      font-size: 40px; } }
 
-.offer > div > h3 {
+.offer > h3 {
   font-family: "InfoText Normal";
   font-size: 20px;
-  margin: 30px 0 30px 0;
-  padding: 0 15%; }
+  margin: 30px 0; }
   @media only screen and (min-width: 64em) {
-    .offer > div > h3 {
-      font-size: 24px;
-      padding: 0 20%; } }
+    .offer > h3 {
+      font-size: 30px; } }
 
 .content-list {
   text-align: center;
@@ -6590,7 +6589,8 @@ p {
   margin: 40px auto;
   display: flex;
   flex-direction: column;
-  width: 80vw; }
+  width: 80vw;
+  position: relative; }
   @media only screen and (min-width: 64em) {
     .content-list-card {
       width: 900px;
@@ -6624,34 +6624,34 @@ p {
   .content-list-card-text p {
     font-size: 16px; }
 
+.content-list-card-linkto {
+  position: absolute;
+  top: -100px; }
+
 .home-banner {
   height: 100vh;
-  min-width: 100vw;
+  max-height: 1080px;
+  width: 100vw;
+  max-width: 1920px;
   background-image: url("/assets/img/home-page.jpg");
   background-size: cover;
   text-align: center;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: auto;
-  margin-top: -47px; }
+  margin-top: -50.8px; }
   @media only screen and (min-width: 80em) {
     .home-banner {
       background-position: 0 0;
       min-height: 750px; } }
 
 .home-banner-title {
-  min-height: 35vh;
+  height: 35vh;
   padding: 50px;
-  position: absolute;
-  top: 27%;
   color: white; }
   .home-banner-title h2 {
     margin-bottom: 50px; }
-  @media only screen and (min-width: 37.5em) {
-    .home-banner-title {
-      top: 30%; } }
-  @media only screen and (min-width: 80em) {
-    .home-banner-title {
-      top: 350px; } }
 
 .home-button-discover, .home-button-contact {
   font-family: "InfoDispBold Roman";
@@ -6659,7 +6659,6 @@ p {
   color: black;
   font-size: 16px;
   padding: 15px;
-  margin: 0 25px;
   background-color: #fec554; }
   @media only screen and (min-width: 64em) {
     .home-button-discover, .home-button-contact {
@@ -6672,21 +6671,6 @@ p {
   background-color: #ff8e66;
   padding: 15px 58px; }
 
-@media only screen and (min-width: 37.5em) {
-  .home-banner-title > h1 {
-    padding: 0 160px; } }
-@media only screen and (min-width: 64em) {
-  .home-banner-title {
-    padding: 0 180px; }
-
-  .home-banner-title > h1 {
-    padding: 0 120px; }
-
-  .home-banner-title > h2 {
-    padding: 0 50px; } }
-@media only screen and (min-width: 80em) {
-  .home-banner-title > h1 {
-    padding: 0 200px; } }
 .home-top-trainings {
   background-color: white;
   text-align: center;
@@ -6694,7 +6678,8 @@ p {
   @media only screen and (min-width: 80em) {
     .home-top-trainings {
       min-height: 750px;
-      height: 100vh; } }
+      height: 100vh;
+      max-height: 712px; } }
 
 .home-top-trainings > h2 {
   margin-bottom: 50px; }
@@ -6716,8 +6701,10 @@ p {
   margin: 80px 0 20px 0; }
   @media only screen and (min-width: 64em) {
     .home-training-card {
-      min-height: 35vh;
+      min-height: 270px;
+      max-height: 450px;
       width: 20vw;
+      max-width: 300px;
       margin-top: 100px; } }
 
 .home-training-card-img {
@@ -6775,6 +6762,7 @@ p {
     .home-training-card-color1, .home-training-card-color2, .home-training-card-color3 {
       min-height: 270px;
       height: 25vh;
+      max-height: 300px;
       padding-top: 85px; }
       .home-training-card-color1 h3, .home-training-card-color2 h3, .home-training-card-color3 h3 {
         font-size: 24px;
@@ -6802,14 +6790,13 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 0 15px 30px 15px;
+  padding: 20px 15px 50px 15px;
   float: left;
   clear: none; }
   @media only screen and (min-width: 64em) {
     .home-satisfied {
       min-height: 60vh;
-      height: 70vh;
-      padding-bottom: 0; } }
+      max-height: 600px; } }
 
 .carousel, .carousel-inner {
   overflow: visible !important; }
@@ -6883,28 +6870,30 @@ p {
   background-image: url("/assets/img/FOND_BLEU.png");
   background-size: cover;
   background-position: center;
-  padding: 70px;
+  padding: 100px;
   text-align: center;
   width: 100%;
   float: left;
-  clear: none; }
-  @media only screen and (min-width: 64em) {
+  clear: none;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 80em) {
     .home-contact-us {
-      min-height: calc(100vh - 297px); } }
+      min-height: calc(100vh - 300.8px);
+      max-height: 600px !important; } }
 
 .home-contact-us > h2 {
   font-family: "InfoDispBold Roman";
   font-size: 24px;
-  padding: 0 15%; }
+  margin: 0 0 30px 0; }
   @media only screen and (min-width: 64em) {
     .home-contact-us > h2 {
-      font-size: 40px;
-      padding: 0 28%; } }
+      font-size: 40px; } }
 
 .home-contact-us > h3 {
   font-family: "InfoText Normal";
   font-size: 20px;
-  margin: 50px 0 50px 0; }
+  margin: 30px 0; }
   @media only screen and (min-width: 64em) {
     .home-contact-us > h3 {
       font-size: 30px; } }
@@ -6914,11 +6903,11 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  margin: 30px 0 20px 0; }
   @media only screen and (min-width: 64em) {
     .home-contact-us-buttons {
       display: inline;
-      margin-top: 100px;
       height: auto; } }
 
 .contact-button {
