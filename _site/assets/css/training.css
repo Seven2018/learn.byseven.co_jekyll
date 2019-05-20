@@ -6422,6 +6422,10 @@ button.close {
   .seven-main-link > h3:hover {
     color: black; }
 
+body {
+  max-width: 1920px;
+  margin: 0 auto; }
+
 h1 {
   font-family: "InfoDispBold Roman";
   font-size: 24px; }
@@ -6469,9 +6473,9 @@ p {
 .page-flag {
   min-height: 350px;
   height: 45vh;
-  background-image: url("https://images.unsplash.com/photo-1463694775559-eea25626346b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-image: url("/assets/img/flag.jpg");
   background-size: cover;
-  background-position: 0 15%;
+  background-position: center;
   padding: 97px 50px 50px 50px;
   overflow: hidden; }
   .page-flag h2, .page-flag p {
@@ -6621,24 +6625,25 @@ p {
     font-size: 16px; }
 
 .home-banner {
-  min-height: 750px;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1470110385011-8c66cb46f0e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  min-width: 100vw;
+  background-image: url("/assets/img/home-page.jpg");
   background-size: cover;
-  background-position: center;
   text-align: center;
   position: relative;
   overflow: auto;
   margin-top: -47px; }
-  @media only screen and (min-width: 64em) {
+  @media only screen and (min-width: 80em) {
     .home-banner {
-      background-position: 0 0; } }
+      background-position: 0 0;
+      min-height: 750px; } }
 
 .home-banner-title {
   min-height: 35vh;
   padding: 50px;
   position: absolute;
-  top: 27%; }
+  top: 27%;
+  color: white; }
   .home-banner-title h2 {
     margin-bottom: 50px; }
   @media only screen and (min-width: 37.5em) {

@@ -1,18 +1,20 @@
 // BANNER
 
 .home-banner {
-  min-height: 750px;
+  // min-height: 750px;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1470110385011-8c66cb46f0e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  min-width: 100vw;
+  background-image: url("/assets/img/home-page.jpg");
   background-size: cover;
-  background-position: center;
+  // background-position: center;
   text-align: center;
   position: relative;
   overflow: auto;
   margin-top: -47px;
 
-  @include from-large {
+  @include from-xlarge {
     background-position: 0 0;
+    min-height: 750px;
   }
 }
 
@@ -21,6 +23,7 @@
   padding: 50px;
   position: absolute;
   top: 27%;
+  color: white;
   h2 {
     margin-bottom: 50px;
   }

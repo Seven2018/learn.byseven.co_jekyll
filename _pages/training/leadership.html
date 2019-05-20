@@ -14,7 +14,7 @@ lang: fr
   <h2>Nos ateliers en {{page.title}}</h2>
   {% assign contents = site.content | where: 'categories', 'leadership' | sort: 'order'%}
   {% for content in contents %}
-    <div class="content-list-card">
+    <div class="content-list-card" id="{{content.title}}">
       <div class="content-list-card-img">
         <div style="height:100%;width:100%;background-image:url({{content.image}});background-size:cover;background-position:center;"></div>
       </div>
