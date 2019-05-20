@@ -3,7 +3,8 @@ layout: base
 type: content
 permalink: "/content/prendre-la-parole-en-public/"
 title: 'PRENDRE LA PAROLE EN PUBLIC'
-image: https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60
+image: "/assets/img/prendre-la-parole-en-public.jpg"
+order: 2
 quote: "“Le trac, cela vient avec le talent.”
  – Sarah Bernhardt"
 teaser1: "Des règles précises régissent le fonctionnement d’une prise de parole en public, a l’instar du « menu entrée-plat-dessert »."
@@ -13,12 +14,3 @@ lang: fr
 categories: leadership
 ---
 
-## Déroulé
-
-Workshop sur le principe des “Golden Circles” de Simon Sinek. Concept pour définir un message et une communication qui inspire, en plaçant les valeurs et la *vision au centre*.
-
-Ateliers individuels sur le “WHY” personnel : Qu’est ce qui vous anime ?
-
-Pitch pour chaque participant devant l’assemblée et débriefing.
-
-Workshop sur le “management de la poignée de main”.

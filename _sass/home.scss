@@ -1,40 +1,34 @@
 // BANNER
 
 .home-banner {
-  min-height: 750px;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1470110385011-8c66cb46f0e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  max-height: 1080px;
+  width: 100vw;
+  max-width: 1920px;
+  background-image: url("/assets/img/home-page.jpg");
   background-size: cover;
-  background-position: center;
   text-align: center;
-  position: relative;
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: auto;
-  margin-top: -47px;
+  margin-top: -50.8px;
 
-  @include from-large {
+  @include from-xlarge {
     background-position: 0 0;
+    min-height: 750px;
   }
 }
 
 .home-banner-title {
-  min-height: 35vh;
+  height: 35vh;
   padding: 50px;
-  position: absolute;
-  top: 27%;
+  // position: absolute;
+  // top: 27%;
+  color: white;
   h2 {
     margin-bottom: 50px;
-  }
-
-  @include from-medium {
-    top: 30%;
-  }
-
-  // @include from-large {
-  //   top: 35%;
-  // }
-
-  @include from-xlarge {
-    top: 350px;
   }
 }
 
@@ -44,7 +38,7 @@
   color: black;
   font-size: 16px;
   padding: 15px;
-  margin: 0 25px;
+  // margin: 0 25px;
   background-color: rgba(254, 197, 84, 1);
 
   @include from-large {
@@ -61,31 +55,6 @@
   padding: 15px 58px;
 }
 
-
-@include from-medium {
-  .home-banner-title > h1 {
-    padding: 0 160px;
-  }
-}
-
-@include from-large {
-  .home-banner-title {
-    padding: 0 180px;
-  }
-  .home-banner-title > h1 {
-    padding: 0 120px;
-  }
-  .home-banner-title > h2 {
-    padding: 0 50px;
-  }
-}
-
-@include from-xlarge {
-  .home-banner-title > h1 {
-    padding: 0 200px;
-  }
-}
-
 //TOP-TRAININGS
 
 .home-top-trainings {
@@ -96,6 +65,7 @@
   @include from-xlarge {
     min-height: 750px;
     height: 100vh;
+    max-height: 712px;
   }
 }
 
@@ -122,8 +92,10 @@
   margin: 80px 0 20px 0;
 
   @include from-large {
-    min-height: 35vh;
+    min-height: 270px;
+    max-height: 450px;
     width: 20vw;
+    max-width: 300px;
     margin-top: 100px;
   }
 }
@@ -189,6 +161,7 @@
   @include from-large {
     min-height: 270px;
     height: 25vh;
+    max-height: 300px;
     padding-top: 85px;
     h3 {
       font-size: 24px;
@@ -229,23 +202,26 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding-bottom: 30px;
+  padding: 20px 15px 50px 15px;
   float:left;
   clear:none;
 
   @include from-large {
     min-height: 60vh;
-    height: 70vh;
-    padding-bottom: 0;
+    max-height: 600px;
   }
 }
 
 .carousel-inner {
-  padding: 0 15px;
+  // padding: 0 15px;
 }
 
 .carousel, .carousel-inner {
   overflow: visible !important;
+}
+
+.home-satisfied-content {
+  height: 100%;
 }
 
 .home-satisfied-content > h2 {
@@ -265,6 +241,7 @@
 
 .home-satisfied-carousel-card {
   min-height: 25vh;
+  width: auto;
   background-color: white;
   box-shadow: 0px 0px 10px 2px rgba(136,136,136,0.7);
   display: flex;
@@ -338,32 +315,34 @@
   background-image: url("/assets/img/FOND_BLEU.png");
   background-size: cover;
   background-position: center;
-  padding: 70px;
+  padding: 100px;
   text-align: center;
   width: 100%;
   float:left;
   clear:none;
+  display: flex;
+  flex-direction: column;
 
-  @include from-large {
-    min-height: calc(100vh - 297px);
+  @include from-xlarge {
+    min-height: calc(100vh - 300.8px);
+    max-height: 600px !important;
   }
 }
 
 .home-contact-us > h2 {
   font-family: "InfoDispBold Roman";
   font-size: 24px;
-  padding: 0 15%;
+  margin: 0 0 30px 0;
 
   @include from-large {
     font-size: 40px;
-    padding: 0 28%;
   }
 }
 
 .home-contact-us > h3 {
   font-family: "InfoText Normal";
   font-size: 20px;
-  margin: 50px 0 50px 0;
+  margin: 30px 0;
 
   @include from-large {
     font-size: 30px;
@@ -376,10 +355,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin: 30px 0 20px 0;
 
   @include from-large {
     display: inline;
-    margin-top: 100px;
     height: auto;
   }
 }

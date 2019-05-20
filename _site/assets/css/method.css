@@ -6280,7 +6280,7 @@ button.close {
   z-index: 10;
   transition: all 0.8s ease; }
   .navbar-seven img {
-    height: 33px;
+    width: 150px;
     margin: 7px 0; }
 
 .scrolled {
@@ -6422,6 +6422,10 @@ button.close {
   .seven-main-link > h3:hover {
     color: black; }
 
+body {
+  max-width: 1920px;
+  margin: 0 auto; }
+
 h1 {
   font-family: "InfoDispBold Roman";
   font-size: 24px; }
@@ -6476,7 +6480,7 @@ html, body {
 .method-flag {
   min-height: 350px;
   height: 50vh;
-  padding: 50px;
+  padding: 97px 50px 50px 50px;
   background-color: #a6c6e2;
   background-image: url("/assets/img/expertise_background2.png");
   background-size: cover;
@@ -6508,8 +6512,21 @@ html, body {
     padding: 30px;
     box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.7);
     text-align: left; }
+    @media only screen and (min-width: 64em) {
+      .method-main-text div {
+        margin: 60px 200px; } }
   .method-main-text div > p {
-    width: 75vw; }
+    margin: 0; }
+
+.method-intro, .method-titles {
+  font-weight: bold; }
+
+.method-titles {
+  color: #739dbe; }
+
+.method-italics {
+  font-family: 'InfoTextRegular Italic';
+  color: #739dbe; }
 
 .method-team {
   background-image: url("/assets/img/FOND_POIS.png");
@@ -6524,7 +6541,7 @@ html, body {
     font-family: 'InfoText Normal' !important; }
 
 .method-team-presentation {
-  text-align: left; }
+  text-align: center; }
   .method-team-presentation h2 {
     margin-top: 94.9px; }
   @media only screen and (min-width: 64em) {
@@ -6539,7 +6556,7 @@ html, body {
       padding: 0 100px; } }
 
 .method-team-card {
-  background-color: white;
+  background-color: #f6f6f6;
   box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8);
   padding: 30px;
   margin: 20px 0; }
@@ -6576,7 +6593,6 @@ html, body {
     margin: 0;
     color: #739dbf; }
   .method-team-card-name div > i {
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
     margin: 0 5px; }
 
 .method-team-card-tags {
@@ -6585,9 +6601,9 @@ html, body {
 .page-flag {
   min-height: 350px;
   height: 45vh;
-  background-image: url("https://images.unsplash.com/photo-1463694775559-eea25626346b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-image: url("/assets/img/flag.jpg");
   background-size: cover;
-  background-position: 0 15%;
+  background-position: center;
   padding: 97px 50px 50px 50px;
   overflow: hidden; }
   .page-flag h2, .page-flag p {
@@ -6598,20 +6614,22 @@ html, body {
         max-width: 55vw; } }
   @media only screen and (min-width: 64em) {
     .page-flag {
-      height: 50vh; } }
+      height: 50vh;
+      max-height: 450px; } }
 
 .training-list {
   text-align: center;
   padding: 70px 50px;
   background-color: #fbf7eb; }
   .training-list .container {
-    margin-top: 60px; }
+    margin-top: 60px;
+    padding: 0 20px; }
 
 .training-card {
   height: 400px !important;
   text-align: left;
   background-color: white;
-  box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8);
+  box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.4);
   margin: 20px 5px;
   transition: all 0.8s ease; }
   .training-card:hover {
@@ -6621,10 +6639,7 @@ html, body {
       color: white; }
 
 .training-card-img {
-  height: 250px;
-  background-image: url("https://images.unsplash.com/photo-1418225162054-0f773a996f9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1658&q=80");
-  background-size: cover;
-  position: relative; }
+  height: 250px; }
 
 .training-card-description {
   height: 150px;
@@ -6644,7 +6659,7 @@ html, body {
   margin-bottom: 24px; }
 
 .training-link {
-  height: 100%;
+  height: 400px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -6654,32 +6669,36 @@ html, body {
   background-image: url("/assets/img/MONTAGNES_JAUNES.png");
   background-size: cover;
   background-position: center;
+  padding: 100px;
   text-align: center;
+  width: 100%;
+  float: left;
+  clear: none;
   display: flex;
-  align-items: center;
-  padding: 50px; }
+  flex-direction: column; }
   @media only screen and (min-width: 80em) {
     .offer {
-      min-height: calc(100vh - 297px); } }
+      min-height: calc(100vh - 300.8px);
+      max-height: 600px; } }
 
-.offer > div > h2 {
+.offer > div {
+  margin: 30px 0 20px 0; }
+
+.offer > h2 {
   font-family: "InfoDispBold Roman";
   font-size: 24px;
-  padding: 0 15%; }
+  margin: 0 0 30px 0; }
   @media only screen and (min-width: 64em) {
-    .offer > div > h2 {
-      font-size: 32px;
-      padding: 0 28%; } }
+    .offer > h2 {
+      font-size: 40px; } }
 
-.offer > div > h3 {
+.offer > h3 {
   font-family: "InfoText Normal";
   font-size: 20px;
-  margin: 50px 0 50px 0;
-  padding: 0 15%; }
+  margin: 30px 0; }
   @media only screen and (min-width: 64em) {
-    .offer > div > h3 {
-      font-size: 24px;
-      padding: 0 20%; } }
+    .offer > h3 {
+      font-size: 30px; } }
 
 .content-list {
   text-align: center;
@@ -6698,7 +6717,8 @@ html, body {
   margin: 40px auto;
   display: flex;
   flex-direction: column;
-  width: 80vw; }
+  width: 80vw;
+  position: relative; }
   @media only screen and (min-width: 64em) {
     .content-list-card {
       width: 900px;
@@ -6732,33 +6752,34 @@ html, body {
   .content-list-card-text p {
     font-size: 16px; }
 
+.content-list-card-linkto {
+  position: absolute;
+  top: -100px; }
+
 .home-banner {
-  min-height: 750px;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1470110385011-8c66cb46f0e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  max-height: 1080px;
+  width: 100vw;
+  max-width: 1920px;
+  background-image: url("/assets/img/home-page.jpg");
   background-size: cover;
-  background-position: center;
   text-align: center;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: auto;
-  margin-top: -47px; }
-  @media only screen and (min-width: 64em) {
+  margin-top: -50.8px; }
+  @media only screen and (min-width: 80em) {
     .home-banner {
-      background-position: 0 0; } }
+      background-position: 0 0;
+      min-height: 750px; } }
 
 .home-banner-title {
-  min-height: 35vh;
+  height: 35vh;
   padding: 50px;
-  position: absolute;
-  top: 27%; }
+  color: white; }
   .home-banner-title h2 {
     margin-bottom: 50px; }
-  @media only screen and (min-width: 37.5em) {
-    .home-banner-title {
-      top: 30%; } }
-  @media only screen and (min-width: 80em) {
-    .home-banner-title {
-      top: 350px; } }
 
 .home-button-discover, .home-button-contact {
   font-family: "InfoDispBold Roman";
@@ -6766,7 +6787,6 @@ html, body {
   color: black;
   font-size: 16px;
   padding: 15px;
-  margin: 0 25px;
   background-color: #fec554; }
   @media only screen and (min-width: 64em) {
     .home-button-discover, .home-button-contact {
@@ -6779,21 +6799,6 @@ html, body {
   background-color: #ff8e66;
   padding: 15px 58px; }
 
-@media only screen and (min-width: 37.5em) {
-  .home-banner-title > h1 {
-    padding: 0 160px; } }
-@media only screen and (min-width: 64em) {
-  .home-banner-title {
-    padding: 0 180px; }
-
-  .home-banner-title > h1 {
-    padding: 0 120px; }
-
-  .home-banner-title > h2 {
-    padding: 0 50px; } }
-@media only screen and (min-width: 80em) {
-  .home-banner-title > h1 {
-    padding: 0 200px; } }
 .home-top-trainings {
   background-color: white;
   text-align: center;
@@ -6801,7 +6806,8 @@ html, body {
   @media only screen and (min-width: 80em) {
     .home-top-trainings {
       min-height: 750px;
-      height: 100vh; } }
+      height: 100vh;
+      max-height: 712px; } }
 
 .home-top-trainings > h2 {
   margin-bottom: 50px; }
@@ -6823,8 +6829,10 @@ html, body {
   margin: 80px 0 20px 0; }
   @media only screen and (min-width: 64em) {
     .home-training-card {
-      min-height: 35vh;
+      min-height: 270px;
+      max-height: 450px;
       width: 20vw;
+      max-width: 300px;
       margin-top: 100px; } }
 
 .home-training-card-img {
@@ -6882,6 +6890,7 @@ html, body {
     .home-training-card-color1, .home-training-card-color2, .home-training-card-color3 {
       min-height: 270px;
       height: 25vh;
+      max-height: 300px;
       padding-top: 85px; }
       .home-training-card-color1 h3, .home-training-card-color2 h3, .home-training-card-color3 h3 {
         font-size: 24px;
@@ -6909,20 +6918,19 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding-bottom: 30px;
+  padding: 20px 15px 50px 15px;
   float: left;
   clear: none; }
   @media only screen and (min-width: 64em) {
     .home-satisfied {
       min-height: 60vh;
-      height: 70vh;
-      padding-bottom: 0; } }
-
-.carousel-inner {
-  padding: 0 15px; }
+      max-height: 600px; } }
 
 .carousel, .carousel-inner {
   overflow: visible !important; }
+
+.home-satisfied-content {
+  height: 100%; }
 
 .home-satisfied-content > h2 {
   padding: 30px;
@@ -6934,6 +6942,7 @@ html, body {
 
 .home-satisfied-carousel-card {
   min-height: 25vh;
+  width: auto;
   background-color: white;
   box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.7);
   display: flex;
@@ -6989,28 +6998,30 @@ html, body {
   background-image: url("/assets/img/FOND_BLEU.png");
   background-size: cover;
   background-position: center;
-  padding: 70px;
+  padding: 100px;
   text-align: center;
   width: 100%;
   float: left;
-  clear: none; }
-  @media only screen and (min-width: 64em) {
+  clear: none;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 80em) {
     .home-contact-us {
-      min-height: calc(100vh - 297px); } }
+      min-height: calc(100vh - 300.8px);
+      max-height: 600px !important; } }
 
 .home-contact-us > h2 {
   font-family: "InfoDispBold Roman";
   font-size: 24px;
-  padding: 0 15%; }
+  margin: 0 0 30px 0; }
   @media only screen and (min-width: 64em) {
     .home-contact-us > h2 {
-      font-size: 40px;
-      padding: 0 28%; } }
+      font-size: 40px; } }
 
 .home-contact-us > h3 {
   font-family: "InfoText Normal";
   font-size: 20px;
-  margin: 50px 0 50px 0; }
+  margin: 30px 0; }
   @media only screen and (min-width: 64em) {
     .home-contact-us > h3 {
       font-size: 30px; } }
@@ -7020,11 +7031,11 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  margin: 30px 0 20px 0; }
   @media only screen and (min-width: 64em) {
     .home-contact-us-buttons {
       display: inline;
-      margin-top: 100px;
       height: auto; } }
 
 .contact-button {
