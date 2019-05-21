@@ -103,8 +103,7 @@
   flex-direction: column;
 
   @include from-xlarge {
-    min-height: calc(100vh - 300.8px);
-    max-height: 600px;
+    min-height: 450px;
   }
 }
 

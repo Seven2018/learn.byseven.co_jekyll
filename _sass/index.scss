@@ -6,7 +6,7 @@
 // }
 
 body {
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-    font-family: "InfoText Normal";
+    font-family: "InfoDispBold Roman";
     font-size: 20px;
 
     @include from-medium {

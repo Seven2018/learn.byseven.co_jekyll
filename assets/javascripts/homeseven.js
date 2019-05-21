@@ -1,12 +1,15 @@
 const initUpdateNavbarOnScroll = () => {
   const navbar = document.querySelector('.navbar-seven');
+  const logo = document.getElementById('seven-logo');
   if (window.location.href === "https://test.byseven.co/") {
     if (navbar) {
       window.addEventListener('scroll', () => {
         if (window.scrollY >= window.innerHeight*.94) {
           navbar.classList.add('scrolled');
+          logo.src = "/assets/img/LOGO-LEARN-02.png";
         } else {
           navbar.classList.remove('scrolled');
+          logo.src = "/assets/img/LOGO_BLANC_LEARN.png";
         }
       });
     }

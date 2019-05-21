@@ -6320,7 +6320,7 @@ button.close {
       display: inline; }
       .navbar-seven .navbar-links a {
         margin: 0 20px;
-        font-size: 1.4em; }
+        font-size: 19px; }
     .navbar-seven .navbar-burger {
       display: none; } }
 .footer {
@@ -6426,9 +6426,10 @@ button.close {
   height: 100vh;
   max-height: 1080px;
   width: 100vw;
-  max-width: 1920px;
+  max-width: 1440px;
   background-image: url("/assets/img/home-page.jpg");
   background-size: cover;
+  background-position: 10% 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -6437,7 +6438,6 @@ button.close {
   margin-top: -50.8px; }
   @media only screen and (min-width: 80em) {
     .home-banner {
-      background-position: 0 0;
       min-height: 750px; } }
 
 .home-banner-title {
@@ -6664,17 +6664,20 @@ button.close {
   background-image: url("/assets/img/FOND_BLEU.png");
   background-size: cover;
   background-position: center;
-  padding: 100px;
+  padding: 50px;
   text-align: center;
   width: 100%;
+  height: auto;
   float: left;
   clear: none;
   display: flex;
   flex-direction: column; }
+  @media only screen and (min-width: 64em) {
+    .home-contact-us {
+      padding: 100px; } }
   @media only screen and (min-width: 80em) {
     .home-contact-us {
-      min-height: calc(100vh - 300.8px);
-      max-height: 600px !important; } }
+      height: 450px; } }
 
 .home-contact-us > h2 {
   font-family: "InfoDispBold Roman";
@@ -6693,7 +6696,7 @@ button.close {
       font-size: 30px; } }
 
 .home-contact-us-buttons {
-  height: 180px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -6712,7 +6715,7 @@ button.close {
     background-color: #3aa2ac; }
 
 body {
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto; }
 
 h1 {
@@ -6726,7 +6729,7 @@ h1 {
       font-size: 40px; } }
 
 h2 {
-  font-family: "InfoText Normal";
+  font-family: "InfoDispBold Roman";
   font-size: 20px; }
   @media only screen and (min-width: 37.5em) {
     h2 {
