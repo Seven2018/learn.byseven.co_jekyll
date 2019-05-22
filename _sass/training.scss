@@ -94,13 +94,14 @@
   background-image: url("/assets/img/MONTAGNES_JAUNES.png");
   background-size: cover;
   background-position: center;
-  padding: 100px;
+  padding: 75px 50px;
   text-align: center;
   width: 100%;
   float:left;
   clear:none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   @include from-xlarge {
     min-height: 450px;

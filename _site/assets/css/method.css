@@ -6287,9 +6287,11 @@ button.close {
   background-color: white; }
 
 .navbar-links {
-  margin: 1rem 10px;
+  height: 50.8px;
+  margin: 0 10px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   display: none; }
   .navbar-links a {
     text-decoration: none;
@@ -6317,10 +6319,14 @@ button.close {
     padding-top: 0;
     padding-left: 20px; }
     .navbar-seven .navbar-links {
-      display: inline; }
+      display: flex;
+      justify-content: flex-end; }
       .navbar-seven .navbar-links a {
         margin: 0 20px;
-        font-size: 19px; }
+        font-size: 19px;
+        border: solid 3px rgba(255, 255, 255, 0); }
+        .navbar-seven .navbar-links a:hover {
+          border-bottom: solid 3px #fcc84b; }
     .navbar-seven .navbar-burger {
       display: none; } }
 .footer {
@@ -6470,13 +6476,6 @@ p {
     p {
       font-size: 20px; } }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; }
-
 .method-flag {
   min-height: 350px;
   height: 50vh;
@@ -6503,9 +6502,10 @@ html, body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  padding: 15px; }
   .method-main-text h2 {
-    margin-top: 94.9px; }
+    margin-top: 79.9px; }
   .method-main-text div {
     background-color: white;
     margin: 60px auto;
@@ -6669,13 +6669,14 @@ html, body {
   background-image: url("/assets/img/MONTAGNES_JAUNES.png");
   background-size: cover;
   background-position: center;
-  padding: 100px;
+  padding: 75px 50px;
   text-align: center;
   width: 100%;
   float: left;
   clear: none;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
   @media only screen and (min-width: 80em) {
     .offer {
       min-height: 450px; } }
@@ -6769,9 +6770,6 @@ html, body {
   align-items: center;
   overflow: auto;
   margin-top: -50.8px; }
-  @media only screen and (min-width: 80em) {
-    .home-banner {
-      min-height: 750px; } }
 
 .home-banner-title {
   height: 35vh;
@@ -6786,29 +6784,34 @@ html, body {
   color: black;
   font-size: 16px;
   padding: 15px;
-  background-color: #fec554; }
+  background-color: #fec554;
+  margin: 15px; }
   @media only screen and (min-width: 64em) {
     .home-button-discover, .home-button-contact {
       font-size: 24px; } }
 
 .home-button-discover {
   background-color: #fec554; }
+  .home-button-discover:hover {
+    background-color: rgba(254, 197, 84, 0.8); }
 
 .home-button-contact {
   background-color: #ff8e66;
   padding: 15px 58px; }
+  .home-button-contact:hover {
+    background-color: rgba(255, 142, 102, 0.8); }
 
 .home-top-trainings {
   background-color: white;
   text-align: center;
-  padding: 50px; }
-  @media only screen and (min-width: 80em) {
-    .home-top-trainings {
-      min-height: 750px;
-      height: 100vh;
-      max-height: 712px; } }
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
 
 .home-top-trainings > h2 {
+  margin-top: 0;
   margin-bottom: 50px; }
 
 .home-training-grid {
@@ -6912,18 +6915,17 @@ html, body {
   .home-training-card-color3 a {
     color: #ff8e66; }
 
+.home-top-training-link {
+  margin-bottom: 20px; }
+
 .home-satisfied {
   background-image: url("/assets/img/FOND_POIS.png");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 20px 15px 50px 15px;
+  padding: 100px 15px;
   float: left;
   clear: none; }
-  @media only screen and (min-width: 64em) {
-    .home-satisfied {
-      min-height: 60vh;
-      max-height: 600px; } }
 
 .carousel, .carousel-inner {
   overflow: visible !important; }
@@ -6932,12 +6934,8 @@ html, body {
   height: 100%; }
 
 .home-satisfied-content > h2 {
-  padding: 30px;
+  padding-bottom: 30px;
   margin: 0; }
-
-@media only screen and (min-width: 64em) {
-  .home-satisfied-carousel {
-    margin-bottom: 70px; } }
 
 .home-satisfied-carousel-card {
   min-height: 25vh;
@@ -6997,17 +6995,15 @@ html, body {
   background-image: url("/assets/img/FOND_BLEU.png");
   background-size: cover;
   background-position: center;
-  padding: 50px;
+  padding: 75px 50px;
   text-align: center;
   width: 100%;
   height: auto;
   float: left;
   clear: none;
   display: flex;
-  flex-direction: column; }
-  @media only screen and (min-width: 64em) {
-    .home-contact-us {
-      padding: 100px; } }
+  flex-direction: column;
+  justify-content: center; }
   @media only screen and (min-width: 80em) {
     .home-contact-us {
       height: 450px; } }

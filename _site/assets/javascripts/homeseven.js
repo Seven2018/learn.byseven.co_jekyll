@@ -2,6 +2,7 @@ const initUpdateNavbarOnScroll = () => {
   const navbar = document.querySelector('.navbar-seven');
   const logo = document.getElementById('seven-logo');
   if (window.location.href === "https://test.byseven.co/") {
+    logo.src = "/assets/img/LOGO_BLANC_LEARN.png";
     if (navbar) {
       window.addEventListener('scroll', () => {
         if (window.scrollY >= window.innerHeight*.94) {

@@ -14,10 +14,6 @@
   align-items: center;
   overflow: auto;
   margin-top: -50.8px;
-
-  @include from-xlarge {
-    min-height: 750px;
-  }
 }
 
 .home-banner-title {
@@ -39,6 +35,7 @@
   padding: 15px;
   // margin: 0 25px;
   background-color: rgba(254, 197, 84, 1);
+  margin: 15px;
 
   @include from-large {
     font-size: 24px;
@@ -47,11 +44,19 @@
 
 .home-button-discover {
   background-color: rgb(254, 197, 84);
+
+  &:hover {
+    background-color: rgba(254, 197, 84, 0.8);
+  }
 }
 
 .home-button-contact {
   background-color: rgb(255, 142, 102);
   padding: 15px 58px;
+
+  &:hover {
+    background-color: rgba(255, 142, 102, 0.8);
+  }
 }
 
 //TOP-TRAININGS
@@ -59,16 +64,15 @@
 .home-top-trainings {
   background-color: white;
   text-align: center;
-  padding: 50px;
-
-  @include from-xlarge {
-    min-height: 750px;
-    height: 100vh;
-    max-height: 712px;
-  }
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .home-top-trainings > h2 {
+  margin-top: 0;
   margin-bottom: 50px;
 }
 
@@ -194,6 +198,10 @@
   }
 }
 
+.home-top-training-link {
+  margin-bottom: 20px;
+}
+
 //HOME-SATISFIED
 
 .home-satisfied {
@@ -201,14 +209,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 20px 15px 50px 15px;
+  padding: 100px 15px;
   float:left;
   clear:none;
 
-  @include from-large {
-    min-height: 60vh;
-    max-height: 600px;
-  }
+  // @include from-large {
+  //   padding: 20px 15px 50px 15px;
+  // }
 }
 
 .carousel-inner {
@@ -224,18 +231,8 @@
 }
 
 .home-satisfied-content > h2 {
-  padding: 30px;
+  padding-bottom: 30px;
   margin: 0;
-
-  @include from-large {
-  }
-}
-
-.home-satisfied-carousel {
-
-  @include from-large {
-    margin-bottom: 70px;
-  }
 }
 
 .home-satisfied-carousel-card {
@@ -314,7 +311,7 @@
   background-image: url("/assets/img/FOND_BLEU.png");
   background-size: cover;
   background-position: center;
-  padding: 50px;
+  padding: 75px 50px;
   text-align: center;
   width: 100%;
   height: auto;
@@ -322,10 +319,7 @@
   clear:none;
   display: flex;
   flex-direction: column;
-
-  @include from-large {
-    padding: 100px;
-  }
+  justify-content: center;
 
   @include from-xlarge {
     height: 450px;

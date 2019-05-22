@@ -1,11 +1,11 @@
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
+// html,body
+// {
+//     width: 100%;
+//     height: 100%;
+//     margin: 0px;
+//     padding: 0px;
+//     overflow-x: hidden;
+// }
 
 //FLAG
 
@@ -43,9 +43,10 @@ html,body
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding: 15px;
 
   h2 {
-    margin-top: 94.9px;
+    margin-top: 79.9px;
   }
 
   div {
