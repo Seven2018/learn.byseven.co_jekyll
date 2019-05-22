@@ -5,7 +5,7 @@ const initUpdateNavbarOnScroll = () => {
     logo.src = "/assets/img/LOGO_BLANC_LEARN.png";
     if (navbar) {
       window.addEventListener('scroll', () => {
-        if (window.scrollY >= window.innerHeight*.94) {
+        if (window.scrollY >= window.innerHeight*.95) {
           navbar.classList.add('scrolled');
           logo.src = "/assets/img/LOGO-LEARN-02.png";
         } else {

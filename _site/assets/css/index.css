@@ -6468,10 +6468,12 @@ button.close {
     background-color: rgba(254, 197, 84, 0.8); }
 
 .home-button-contact {
-  background-color: #ff8e66;
-  padding: 15px 58px; }
+  background-color: #ff8e66; }
   .home-button-contact:hover {
     background-color: rgba(255, 142, 102, 0.8); }
+  @media only screen and (min-width: 64em) {
+    .home-button-contact {
+      padding: 15px 58px; } }
 
 .home-top-trainings {
   background-color: white;
