@@ -4,7 +4,7 @@ type: content
 permalink: "/content/concevoir-une-trame-de-formation-seven/"
 title: CONCEVOIR UNE TRAME DE FORMATION SEVEN
 image: "/assets/img/concevoir-une-trame-de-formation-seven.png"
-order: 8
+order: 9
 quote: "“Les plans ont peu d’importance mais la planification est essentielle.”
  – Winston Churchill"
 teaser1: "La qualité de la transmission de connaissances est étroitement liée à la capacité qu’a le formateur à engager son audience durant ses prises de parole.

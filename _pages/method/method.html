@@ -51,7 +51,7 @@ lang: fr
     <div class="row">
       {% assign persons = site.people | sort: 'order' %}
       {% for person in persons %}
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-6 row-eq-height">
           <div class="method-team-card">
             <img src="{{person.photo}}" class='method-team-avatar'>
             <div class="method-team-card-text">
@@ -63,7 +63,7 @@ lang: fr
                   <i class="fas fa-circle" style="color: {{person.colorthree}}"></i>
                 </div>
               </div>
-              <p class="method-team-card-tags">{{person.tags}}</p>
+              <p class="method-team-card-tags">{{person.tags | array_to_sentence_string: " "}}</p>
               <br>
               <p class="method-card-team-bio">{{person.bio}}</p>
             </div>
