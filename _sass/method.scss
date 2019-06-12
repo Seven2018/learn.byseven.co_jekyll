@@ -82,11 +82,17 @@
 
 // TEAM
 
+#team-anchor {
+  position: absolute;
+  top: 0px;
+}
+
 .method-team {
   background-image: url('/assets/img/FOND_POIS.png');
   background-repeat: repeat;
   padding: 10px;
   text-align: center;
+  position: relative;
 
   @include from-medium {
     padding: 70px 50px;
@@ -127,11 +133,16 @@
   box-shadow: 2px 2px 10px rgba(136,136,136,0.8);
   padding: 30px;
   margin: 20px 0;
-  height: 946px;
+  height: auto;
 
   @include from-large {
     margin: 40px 60px;
     min-width: 350px;
+    height: 1075px;
+  }
+
+  @include from-xlarge {
+    height: 946px;
   }
 }
 
@@ -178,11 +189,4 @@
 
 .method-team-card-tags {
   font-family: 'InfoDispBook Italic';
-}
-
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
 }

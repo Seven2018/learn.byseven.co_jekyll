@@ -25,7 +25,7 @@
 
     <body class="page-method">
         <header class="navbar-seven">
-  <a href="https://test.byseven.co"><img src="../assets/img/LOGO-LEARN-02.png" alt="" id='seven-logo'></a>
+  <a href="http://test.byseven.co"><img src="../assets/img/LOGO-LEARN-02.png" alt="" id='seven-logo'></a>
   <nav class="navbar-links">
     <a href="/training/">Formations</a>
     <a href="/method/">Méthode</a>
@@ -51,6 +51,7 @@
   <img src="/assets/img/papers.png" alt="">
 </div>
 <div class="method-main-text">
+  <a id='method-anchor'></a>
   <h2>La Méthode</h2>
   <div>
     <p class="method-intro">La méthode Seven consiste à appliquer les principes ci-dessous. Afin de créer une expérience riche pour les participants et les formateurs. Aucun principe n’a plus de valeur que les autres quand il s’agit de mettre en place une action de formation efficace.</p>
@@ -78,6 +79,7 @@
 </div>
 
 <div class="method-team">
+  <a id="team-anchor"></a>
   <div class="container">
     <h2 style="font-family: 'InfoDispBold Roman';">L'Equipe</h2>
     <div class='method-team-presentation'>
@@ -111,7 +113,7 @@
       
         <div class="col-xs-12 col-md-6 row-eq-height">
           <div class="method-team-card">
-            <img src="/assets/img/Yahya.jpg" class='method-team-avatar'>
+            <img src="/assets/img/yahya.jpg" class='method-team-avatar'>
             <div class="method-team-card-text">
               <div class="method-team-card-name">
                 <h3>YAHYA FALLAH</h3>
@@ -187,15 +189,15 @@
     <div class="footer-categories" id="footer-categories2">
       <h3>RESSOURCES</h3>
       <div class="footer-links">
-        <a href="https://learn.byseven.co/training/">Nos contenus</a>
+        <a href="../training/">Nos contenus</a>
       </div>
     </div>
     <div class="footer-categories" id="footer-categories3">
       <h3>A PROPOS</h3>
       <div class="footer-links">
-        <a href="https://learn.byseven.co/method/">Méthode</a>
-        <a href="">Notre équipe</a>
-        <a href="">Contactez-nous</a>
+        <a href="../method#method-anchor">Méthode</a>
+        <a href="../method#team-anchor">Notre équipe</a>
+        <a href="" data-toggle='modal' data-target='#contactUs'>Contactez-nous</a>
       </div>
     </div>
     <div class="footer-categories" id="footer-categories4">
@@ -207,6 +209,38 @@
         <a href="">SEVEN media</a>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div id="modal-title" style=" display: flex; justify-content: space-between;">
+      <h3 class="modal-title" id="myModalLabel">Contactez-nous</h3>
+    </div>
+  </div>
+  <div class="modal-body" id="modalNewBookinBody">
+    <form action="https://getsimpleform.com/messages?form_api_token=b9caaa8cd3564bb6363c2bba6c1ab16f" method="POST" id="contact-form">
+      <div class="form-group">
+        <label for="form-name">Votre nom</label>
+        <input type="text" name="name" id='form-name' placeholder="Nom" class='form-control'>
+      </div>
+      <div class="form-group">
+        <label for="form-email">Votre adresse email</label>
+        <input type="email" name="_replyto" id='form-email' placeholder="Adresse email" class='form-control'>
+      </div>
+      <div class="form-group">
+        <label for="form-message">Votre message</label>
+        <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Votre message" class='form-control'></textarea>
+      </div>
+      <button type="submit" class="btn contact-button">Soumettre</button>
+    </form>
+  </div>
+</div>
+
   </div>
 </div>
 

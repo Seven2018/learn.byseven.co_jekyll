@@ -92,19 +92,21 @@ lang: fr
         </a>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="training-card">
-          <div class="training-card-img" style="background-image:url('/assets/img/votre theme.jpg');background-size:cover;background-position:center;"></div>
-          <div class="training-card-description  color-change">
-            <h3>VOTRE THEME</h3>
-            <p>Définissons ensemble les nouveaux thèmes que vous souhaitez aborder tout en profitant de l’expérience et de la méthode Seven</p>
+        <a href="" data-toggle='modal' data-target='#contactUsTheme'>
+          <div class="training-card">
+            <div class="training-card-img" style="background-image:url('/assets/img/votre theme.jpg');background-size:cover;background-position:center;"></div>
+            <div class="training-card-description  color-change">
+              <h3>VOTRE THEME</h3>
+              <p>Définissons ensemble les nouveaux thèmes que vous souhaitez aborder tout en profitant de l’expérience et de la méthode Seven</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
 </div>
 <div class="training-offer offer">
-    <h2><strong>Vous souhaitez mettre en place un programme de formations personnalisé pour vos équipes et vos collaborateurs ?</strong></h2>
+    <h2>Vous souhaitez mettre en place un programme de formations personnalisé pour vos équipes et vos collaborateurs ?</h2>
     <h3>Nous sommes passionés par l'ingénierie pédagogique</h3>
     <div><a href="" class="home-button-discover" data-toggle='modal' data-target='#contactUs'>Echangeons ensemble</a></div>
 </div>
@@ -114,5 +116,11 @@ lang: fr
 <div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     {% include contact-modal.html %}
+  </div>
+</div>
+
+<div class="modal fade" id="contactUsTheme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    {% include contact-modal-theme.html %}
   </div>
 </div>

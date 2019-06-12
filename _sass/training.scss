@@ -23,6 +23,51 @@
   }
 }
 
+#leadership-flag {
+  background-image:url('/assets/img/leadership.jpg');
+  background-size: cover;
+  background-position: right 60% top 10%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: end;
+}
+
+#team-management-flag {
+  background-image:url('/assets/img/gestion dequipe.jpg');
+  background-size: cover;
+}
+
+#communication-flag {
+  background-image:url('/assets/img/communication.jpg');
+  background-size: cover;
+  background-position: 0 55%;
+}
+
+#business-developement-flag {
+  background-image:url('/assets/img/business-developement.jpeg');
+  background-size: cover;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#project-management {
+  background-image:url('/assets/img/gestion de projet.jpg');
+  background-size: cover;
+}
+
+#economic-intelligence-flag {
+  background-image:url('/assets/img/intelligence eco.jpg');
+  background-size: cover;
+}
+
+#team-building-flag {
+  background-image:url('/assets/img/team building.jpg');
+  background-size: cover;
+}
 
 // LIST
 
@@ -162,7 +207,7 @@
   display: flex;
   flex-direction: column;
   // box-shadow: 2px 2px 10px rgba(136,136,136,0.8);
-  width: 80vw;
+  width: 65vw;
   position: relative;
 
   @include from-large {
@@ -173,8 +218,8 @@
 }
 
 .content-list-card-img {
-  width: 80vw;
-  height: 50vh;
+  width: 65vw;
+  height: 65vw;
 
   @include from-large {
     width: 450px;
@@ -187,8 +232,8 @@
   display: flex;
   align-items: center;
   background-color: white;
-  width: 80vw;
-  height: 50vh;
+  width: 65vw;
+  height: 65vw;
 
   @include from-large {
     width: 450px;

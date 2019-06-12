@@ -1,7 +1,7 @@
 ---
 name: YAHYA FALLAH
 order: 2
-photo: "/assets/img/Yahya.jpg"
+photo: "/assets/img/yahya.jpg"
 tags: Co-fondateur
 colorone: rgb(115, 157, 191)
 colortwo: rgb(220,20,60)

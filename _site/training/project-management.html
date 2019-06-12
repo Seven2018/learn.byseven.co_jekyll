@@ -25,7 +25,7 @@
 
     <body class="page-training">
         <header class="navbar-seven">
-  <a href="https://test.byseven.co"><img src="../assets/img/LOGO-LEARN-02.png" alt="" id='seven-logo'></a>
+  <a href="http://test.byseven.co"><img src="../assets/img/LOGO-LEARN-02.png" alt="" id='seven-logo'></a>
   <nav class="navbar-links">
     <a href="/training/">Formations</a>
     <a href="/method/">Méthode</a>
@@ -45,9 +45,9 @@
 </header>
 
         <main>
-            <div class="page-flag content-list-flag">
-  <p>“Le leadership est le produit d'une personnalité attachante associée à une force de conviction permettant d'entraîner les autres sur des projets ambitieux.”</p>
-  <p>Jean-François Rial</p>
+            <div class="page-flag content-list-flag" id="project-management">
+  <p>“Passer en mode projet c’est décider de sprinter un marathon en se préservant de la fatigue et des blessures.”</p>
+  <p>SEVEN</p>
 </div>
 <div class="content-list">
   <h2>Nos ateliers en Gestion de projet</h2>
@@ -188,7 +188,7 @@
   
 </div>
 <div class="training-offer offer">
-    <h2><strong>Vous pensez des ateliers et modules de formation spécifiques à intégrer à votre programme ?</strong></h2>
+    <h2>Vous pensez des ateliers et modules de formation spécifiques à intégrer à votre programme ?</h2>
     <h3>Nous concevons et alimentons soigneusement notre propre galerie d’ateliers.
     Nous voulons faire de cette collection un ensemble cohérent, connecté et évolutif de ressources.
     Dites nous votre besoin et explorons les possibilités.
@@ -245,15 +245,15 @@
     <div class="footer-categories" id="footer-categories2">
       <h3>RESSOURCES</h3>
       <div class="footer-links">
-        <a href="https://learn.byseven.co/training/">Nos contenus</a>
+        <a href="../training/">Nos contenus</a>
       </div>
     </div>
     <div class="footer-categories" id="footer-categories3">
       <h3>A PROPOS</h3>
       <div class="footer-links">
-        <a href="https://learn.byseven.co/method/">Méthode</a>
-        <a href="">Notre équipe</a>
-        <a href="">Contactez-nous</a>
+        <a href="../method#method-anchor">Méthode</a>
+        <a href="../method#team-anchor">Notre équipe</a>
+        <a href="" data-toggle='modal' data-target='#contactUs'>Contactez-nous</a>
       </div>
     </div>
     <div class="footer-categories" id="footer-categories4">
@@ -265,6 +265,38 @@
         <a href="">SEVEN media</a>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div id="modal-title" style=" display: flex; justify-content: space-between;">
+      <h3 class="modal-title" id="myModalLabel">Contactez-nous</h3>
+    </div>
+  </div>
+  <div class="modal-body" id="modalNewBookinBody">
+    <form action="https://getsimpleform.com/messages?form_api_token=b9caaa8cd3564bb6363c2bba6c1ab16f" method="POST" id="contact-form">
+      <div class="form-group">
+        <label for="form-name">Votre nom</label>
+        <input type="text" name="name" id='form-name' placeholder="Nom" class='form-control'>
+      </div>
+      <div class="form-group">
+        <label for="form-email">Votre adresse email</label>
+        <input type="email" name="_replyto" id='form-email' placeholder="Adresse email" class='form-control'>
+      </div>
+      <div class="form-group">
+        <label for="form-message">Votre message</label>
+        <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Votre message" class='form-control'></textarea>
+      </div>
+      <button type="submit" class="btn contact-button">Soumettre</button>
+    </form>
+  </div>
+</div>
+
   </div>
 </div>
 
