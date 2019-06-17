@@ -6478,24 +6478,18 @@ p {
 
 .method-flag {
   min-height: 350px;
-  height: 50vh;
+  height: 45vh;
   padding: 97px 50px 50px 50px;
   background-color: #a6c6e2;
-  background-image: url("/assets/img/expertise_background2.png");
+  background-image: url("/assets/img/methode-banner.jpg");
   background-size: cover;
   background-position: 0, 50%;
-  position: relative; }
+  position: relative;
+  display: flex;
+  align-items: end; }
   .method-flag p {
     width: 50vw;
     color: white; }
-  .method-flag img {
-    width: 100px;
-    position: absolute;
-    bottom: 50px;
-    left: 70px; }
-    @media only screen and (min-width: 37.5em) {
-      .method-flag img {
-        width: 145px; } }
 
 .method-main-text {
   background-color: #edf6ff;
@@ -6573,7 +6567,7 @@ p {
       height: 1075px; } }
   @media only screen and (min-width: 80em) {
     .method-team-card {
-      height: 946px; } }
+      height: 900px; } }
 
 .method-team-avatar {
   height: 150px;
@@ -6611,7 +6605,7 @@ p {
 .page-flag {
   min-height: 350px;
   height: 45vh;
-  background-image: url("/assets/img/flag.jpg");
+  background-image: url("/assets/img/formation-banner.jpg");
   background-size: cover;
   background-position: center;
   padding: 97px 50px 50px 50px;
@@ -6766,7 +6760,7 @@ p {
   margin: 40px auto;
   display: flex;
   flex-direction: column;
-  width: 65vw;
+  width: 350px;
   position: relative; }
   @media only screen and (min-width: 64em) {
     .content-list-card {
@@ -6775,8 +6769,8 @@ p {
       justify-content: space-between; } }
 
 .content-list-card-img {
-  width: 65vw;
-  height: 65vw; }
+  width: 350px;
+  height: 350px; }
   @media only screen and (min-width: 64em) {
     .content-list-card-img {
       width: 450px;
@@ -6787,8 +6781,8 @@ p {
   display: flex;
   align-items: center;
   background-color: white;
-  width: 65vw;
-  height: 65vw; }
+  width: 350px;
+  height: 350px; }
   @media only screen and (min-width: 64em) {
     .content-list-card-desc {
       width: 450px;
@@ -6799,7 +6793,10 @@ p {
   .content-list-card-text h3 {
     font-family: 'InfoDispBold Roman'; }
   .content-list-card-text p {
-    font-size: 16px; }
+    font-size: 12px; }
+    @media only screen and (min-width: 64em) {
+      .content-list-card-text p {
+        font-size: 16px; } }
 
 .content-list-card-linkto {
   position: absolute;
@@ -6993,17 +6990,18 @@ p {
   margin: 0; }
 
 .home-satisfied-carousel-card {
-  min-height: 25vh;
+  min-height: 350px;
   width: auto;
   background-color: white;
   box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.7);
   display: flex;
   flex-direction: column;
-  padding: 50px; }
+  padding: 30px; }
   @media only screen and (min-width: 64em) {
     .home-satisfied-carousel-card {
       flex-direction: row;
       justify-content: space-around;
+      align-items: center;
       margin: 0 150px; } }
 
 .home-satisfied-carousel-card > img {
@@ -7022,25 +7020,20 @@ p {
   position: relative; }
   .home-satisfied-carousel-card-description p {
     font-family: "InfoDispBook Italic";
-    font-size: 16px; }
+    font-size: 16px;
+    margin: 0 0 20px 0; }
     @media only screen and (min-width: 64em) {
       .home-satisfied-carousel-card-description p {
-        font-size: 20px; } }
-
-@media only screen and (min-width: 64em) {
-  .home-satisfied-carousel-card-text {
-    padding: 20px 0 20px 30px; } }
+        padding: 20px 0 0 30px; } }
 
 .home-satisfied-carousel-card-person p {
   margin: 0;
   font-family: "Infotext Normal";
-  font-size: 16px; }
+  font-size: 16px;
+  padding: 0; }
 @media only screen and (min-width: 64em) {
   .home-satisfied-carousel-card-person {
     text-align: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
     font-size: 20px; } }
 
 .home-satisfied-carousel-card-name {

@@ -3,7 +3,7 @@
 .page-flag {
   min-height: 350px;
   height: 45vh;
-  background-image: url("/assets/img/flag.jpg");
+  background-image: url("/assets/img/formation-banner.jpg");
   background-size: cover;
   background-position: center;
   padding: 97px 50px 50px 50px;
@@ -207,7 +207,7 @@
   display: flex;
   flex-direction: column;
   // box-shadow: 2px 2px 10px rgba(136,136,136,0.8);
-  width: 65vw;
+  width: 350px;
   position: relative;
 
   @include from-large {
@@ -218,8 +218,8 @@
 }
 
 .content-list-card-img {
-  width: 65vw;
-  height: 65vw;
+  width: 350px;
+  height: 350px;
 
   @include from-large {
     width: 450px;
@@ -232,8 +232,8 @@
   display: flex;
   align-items: center;
   background-color: white;
-  width: 65vw;
-  height: 65vw;
+  width: 350px;
+  height: 350px;
 
   @include from-large {
     width: 450px;
@@ -248,7 +248,11 @@
   }
 
   p {
-    font-size: 16px;
+    font-size: 12px;
+
+    @include from-large {
+      font-size: 16px;
+    }
   }
 }
 

@@ -4,12 +4,14 @@ type: method
 permalink: /method/
 title: "Méthode"
 lang: fr
+ref: method
 ---
 
 <div class="method-flag">
-  <p>"Les plans ont peu d’importance mais la planification est essentielle."</p>
-  <p>Winston Churchill</p>
-  <img src="/assets/img/papers.png" alt="">
+  <div>
+    <p>"Les plans ont peu d’importance mais la planification est essentielle."</p>
+    <p>Winston Churchill</p>
+  </div>
 </div>
 <div class="method-main-text">
   <a id='method-anchor'></a>
@@ -51,7 +53,7 @@ lang: fr
   </div>
   <div class="method-team-grid container">
     <div class="row">
-      {% assign persons = site.people | sort: 'order' %}
+      {% assign persons = site.people | sort: 'order'| where:"lang", page.lang %}
       {% for person in persons %}
         <div class="col-xs-12 col-md-6 row-eq-height">
           <div class="method-team-card">
@@ -68,6 +70,8 @@ lang: fr
               <p class="method-team-card-tags">{{person.tags | array_to_sentence_string: " "}}</p>
               <br>
               <p class="method-card-team-bio">{{person.bio}}</p>
+              <br>
+              <p>Contact : <a href="{{person.linkedin}}"><i class="fab fa-linkedin-in"></i></a></p>
             </div>
           </div>
         </div>
