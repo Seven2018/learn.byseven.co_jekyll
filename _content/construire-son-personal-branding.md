@@ -5,7 +5,7 @@ permalink: "/content/construire-son-personal-branding/"
 title: CONSTRUIRE SON PERSONAL BRANDING
 image: "/assets/img/construire-son-personal-branding.png"
 order: 3
-quote: "Ce Workshop permet à chacun de faire un audit sur l’image qu’il renvoie en général et plus spécifiquement sur Internet ainsi que les les réseaux sociaux et professionnels..
+teaser1: "Ce Workshop permet à chacun de faire un audit sur l’image qu’il renvoie en général et plus spécifiquement sur Internet ainsi que les les réseaux sociaux et professionnels..
 
 Il s’agit ensuite de mettre en place les actions permettant à court et moyen terme de maîtriser son image et la diffuser de façon ciblée.
 

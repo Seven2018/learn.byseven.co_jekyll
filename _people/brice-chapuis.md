@@ -1,11 +1,15 @@
 ---
-name: BRICE CHAPUIS
+firstname: Brice
+lastname: Chapuis
 order: 5
-photo: "/assets/img/Brice.jpeg"
-tags: CTO
+photo: "/assets/img/Brice.png"
+<!-- tags: CTO -->
 colorone: rgb(115, 157, 191)
-colortwo: rgb(215, 218, 180)
+coloronedesc: Organisation et prise de recul
+colortwo: rgb(208, 208, 208)
+colortwodesc: Neutralité et information pure
 colorthree: rgb(220,20,60)
+colorthreedesc: Emotions et expression des intuitions
 linkedin: https://www.linkedin.com/in/brice-chapuis-b8744b181/
 lang: fr
 bio : "Orienté vers la gestion de projet et le Digital, Brice a pu mettre son esprit analytique et ses capacités d'optimisation au service de société comme Longchamp Japan et Nokia. Il met l'accent sur l'efficacité et le respect à travers les relations humaines et la diplomatie. <br><br>

@@ -1,11 +1,15 @@
 ---
-name: MATHILDE MEURER
+firstname: Mathilde
+lastname: Meurer
 order: 3
 photo: "/assets/img/mathilde.jpg"
-tags: Business Developer
+<!-- tags: Business Developer -->
 colorone: rgb(220,20,60)
+coloronedesc: Emotions et expression des intuitions
 colortwo: rgb(254, 197, 84)
+colortwodesc: Optimisme et mise en relation
 colorthree: rgb(115, 157, 191)
+colorthreedesc: Organisation et prise de recul
 linkedin: https://www.linkedin.com/in/mathilde-meurer-80668961/
 lang: fr
 bio : "Persuadée que  la différence est une vraie richesse, Mathilde a travaillé 5 ans dans le domaine du handicap, aux côtés d’Axel Kahn et Pascal Jacob, en tant que chargée de communication.<br><br>

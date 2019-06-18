@@ -6486,7 +6486,8 @@ p {
   overflow: hidden; }
   .page-flag h2, .page-flag p {
     color: white;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); }
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    max-width: 100%; }
     @media only screen and (min-width: 37.5em) {
       .page-flag h2, .page-flag p {
         max-width: 55vw; } }
@@ -6634,17 +6635,25 @@ p {
   margin: 40px auto;
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 90vw;
   position: relative; }
+  @media only screen and (min-width: 37.5em) {
+    .content-list-card {
+      width: 350px; } }
   @media only screen and (min-width: 64em) {
     .content-list-card {
+      margin: 40px auto;
       width: 900px;
       flex-direction: row;
       justify-content: space-between; } }
 
 .content-list-card-img {
-  width: 350px;
-  height: 350px; }
+  width: 90vw;
+  height: 90vw; }
+  @media only screen and (min-width: 37.5em) {
+    .content-list-card-img {
+      width: 350px;
+      height: 350px; } }
   @media only screen and (min-width: 64em) {
     .content-list-card-img {
       width: 450px;
@@ -6655,8 +6664,12 @@ p {
   display: flex;
   align-items: center;
   background-color: white;
-  width: 350px;
-  height: 350px; }
+  width: 90vw;
+  height: 90vw; }
+  @media only screen and (min-width: 37.5em) {
+    .content-list-card-desc {
+      width: 350px;
+      height: 350px; } }
   @media only screen and (min-width: 64em) {
     .content-list-card-desc {
       width: 450px;
@@ -6666,10 +6679,10 @@ p {
   text-align: left; }
   .content-list-card-text h3 {
     font-family: 'InfoDispBold Roman'; }
-  .content-list-card-text p {
+  .content-list-card-text p, .content-list-card-text h4 {
     font-size: 12px; }
     @media only screen and (min-width: 64em) {
-      .content-list-card-text p {
+      .content-list-card-text p, .content-list-card-text h4 {
         font-size: 16px; } }
 
 .content-list-card-linkto {

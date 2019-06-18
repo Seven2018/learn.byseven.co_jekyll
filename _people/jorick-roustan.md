@@ -1,11 +1,15 @@
 ---
-name: JORICK ROUSTAN
+firstname: Jorick
+lastname: Roustan
 order: 4
 photo: "/assets/img/jorick.png"
-tags: Business Developer
+<!-- tags: Business Developer -->
 colorone: rgb(220,20,60)
+coloronedesc: Emotions et expression des intuitions
 colortwo: rgb(254, 197, 84)
+colortwodesc: Optimisme et mise en relation
 colorthree: rgb(37, 143, 147)
+colorthreedesc: Créativité débordante
 linkedin: https://www.linkedin.com/in/jorickroustan/
 lang: fr
 bio : "Jorick est passionné par les mécaniques  de développement individuel et collectif et apprécie de s’étonner continuellement de la richesse des diversités sociales. <br><br>

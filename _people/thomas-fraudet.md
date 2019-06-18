@@ -1,11 +1,15 @@
 ---
-name: THOMAS FRAUDET
+firstname: Thomas
+lastname: Fraudet
 order: 1
 photo: "/assets/img/thomas.jpg"
-tags: Co-fondateur
+<!-- tags: Co-fondateur -->
 colorone: rgb(254, 197, 84)
+coloronedesc: Optimisme et mise en relation
 colortwo: rgb(220,20,60)
+colortwodesc: Emotions et expression des intuitions
 colorthree: rrgb(37, 143, 147)
+colorthreedesc: Prudence et pensée critique
 linkedin: https://www.linkedin.com/in/thomas-fraudet-6a70592/
 lang: fr
 bio : "Consultant en pédagogies innovantes, Thomas Fraudet conçoit
