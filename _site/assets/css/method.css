@@ -6280,7 +6280,7 @@ button.close {
   z-index: 10;
   transition: all 0.8s ease; }
   .navbar-seven img {
-    width: 150px;
+    height: 33px;
     margin: 7px 0; }
 
 .scrolled {
