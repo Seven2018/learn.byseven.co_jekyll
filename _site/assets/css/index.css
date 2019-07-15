@@ -6285,6 +6285,10 @@ button.close {
 
 .scrolled {
   background-color: white; }
+  .scrolled .navbar-links > a {
+    color: black; }
+    .scrolled .navbar-links > a:hover {
+      color: black; }
 
 .navbar-links {
   height: 50.8px;
@@ -6295,8 +6299,10 @@ button.close {
   display: none; }
   .navbar-links a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: "InfoDispSemiBold Roman"; }
+    .navbar-links a:hover {
+      color: white; }
 
 .navbar-burger {
   position: absolute;
@@ -6449,6 +6455,9 @@ button.close {
   color: white; }
   .home-banner-title h2 {
     margin-bottom: 50px; }
+  @media only screen and (min-width: 64em) {
+    .home-banner-title {
+      width: 60vw; } }
 
 .home-button-discover, .home-button-contact {
   font-family: "InfoDispBold Roman";
@@ -6616,7 +6625,7 @@ button.close {
   margin: 0; }
 
 .home-satisfied-carousel-card {
-  min-height: 350px;
+  min-height: 370px;
   width: auto;
   background-color: white;
   box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.7);
@@ -6659,8 +6668,7 @@ button.close {
   padding: 0; }
 @media only screen and (min-width: 64em) {
   .home-satisfied-carousel-card-person {
-    text-align: right;
-    font-size: 20px; } }
+    text-align: right; } }
 
 .home-satisfied-carousel-card-name {
   color: #f8b0a4; }
