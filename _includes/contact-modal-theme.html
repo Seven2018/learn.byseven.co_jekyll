@@ -11,9 +11,13 @@
         <label for="form-name">Votre nom</label>
         <input type="text" name="name" id='form-name' placeholder="Nom" class='form-control'>
       </div>
-      <div class="form-group">
+      <div class="form-group t_r_a_p">
         <label for="form-email">Votre adresse email</label>
-        <input type="email" name="_replyto" id='form-email' placeholder="Adresse email" class='form-control'>
+        <input type="email" name="_t_r_4_p" id='form-email' placeholder="Adresse email" class='form-control' value="Choisir">
+      </div>
+      <div class="form-group">
+        <label for="form-email">Votre courriel</label>
+        <input type="text" name="courriel" id='form-courriel2' placeholder="Courriel" class='form-control'>
       </div>
       <div class="form-group">
         <label for="form-message">Votre message</label>
@@ -22,4 +26,16 @@
       <button type="submit" class="btn contact-button">Soumettre</button>
     </form>
   </div>
+  <script>
+    const test = document.getElementById('form-email');
+    const test2 = document.getElementById('form-courriel2');
+    const button = document.querySelector('.contact-button');
+    test2.addEventListener('keydown', (event) => {
+      if (test.value === 'Choisir') {
+        button.disabled = false;
+      } else {
+        button.disabled = true;
+      }
+    });
+  </script>
 </div>
