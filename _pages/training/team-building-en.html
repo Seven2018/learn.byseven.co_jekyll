@@ -1,0 +1,57 @@
+---
+layout: base
+type: training
+permalink: /training/team-building.html
+title: "Team Building"
+lang: en
+---
+
+<div class="page-flag content-list-flag" id="team-building-flag">
+  <p>“Pour construire une vision commune il faut commencer par construire le collectif.”</p>
+  <p>SEVEN</p>
+</div>
+<div class="content-list">
+  <h2>Our workshops about {{page.title}}</h2>
+  {% assign contents = site.content| where: 'categories', 'team-building' | sort: 'order' %}
+  {% for content in contents %}
+    <div class="content-list-card">
+      <a href="" class="content-list-card-linkto" id="{{content.title}}"></a>
+      <div class="content-list-card-img">
+        <div style="height:100%;width:100%;background-image:url({{content.image}});background-size:cover;background-position:center;"></div>
+      </div>
+      <div class="content-list-card-desc">
+        <div class="content-list-card-text">
+          <h3>{{ content.title }}</h3>
+          <h4><em>{{content.quote}}
+            </em></h4>
+            <br>
+            <p>{{content.teaser1}}
+            <br>
+            <p>{{content.teaser2}}</p>
+          </div>
+      </div>
+
+    </div>
+  {% endfor %}
+</div>
+<div class="training-offer offer">
+    <h2>Any workshop or module you would love to add to your training program ?</h2>
+<!--     <h2>Vous pensez à des ateliers et modules de formation spécifiques à intégrer à votre programme ?</h2> -->
+    <h3>We regurlarly create and expand our workshops catalog.
+    We wish to make a coherent, connected and evolutive repertoire out of it.
+    Let's talk about your needs, and explore together the possibilities.
+    </h3>
+<!--     <h3>Nous concevons et alimentons soigneusement notre propre galerie d’ateliers.
+    Nous voulons faire de cette collection un ensemble cohérent, connecté et évolutif de ressources.
+    Dites nous votre besoin et explorons les possibilités.
+    </h3> -->
+    <div><a href="" class="home-button-discover" data-toggle='modal' data-target='#contactUs'>Contact us</a></div>
+    <!-- <div><a href="" class="home-button-discover" data-toggle='modal' data-target='#contactUs'>Echangeons ensemble</a></div> -->
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    {% include contact-modal.html %}
+  </div>
+</div>
