@@ -6285,9 +6285,9 @@ button.close {
 
 .scrolled {
   background-color: white; }
-  .scrolled .navbar-links > a {
+  .scrolled .navbar-links > a, .scrolled .navbar-links-lang > a {
     color: black; }
-    .scrolled .navbar-links > a:hover {
+    .scrolled .navbar-links > a:hover, .scrolled .navbar-links-lang > a:hover {
       color: black; }
 
 .navbar-links {
@@ -6303,6 +6303,14 @@ button.close {
     font-family: "InfoDispSemiBold Roman"; }
     .navbar-links a:hover {
       color: white; }
+
+.navbar-links-lang a {
+  text-decoration: none;
+  color: white;
+  font-family: "InfoDispSemiBold Roman"; }
+  .navbar-links-lang a:hover {
+    color: white;
+    border-bottom: solid 3px #fcc84b; }
 
 .navbar-burger {
   position: absolute;

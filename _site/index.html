@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/index.css">
-    
+<!--      -->
     <link rel="icon" href="/assets/img/favicon.ico">
     <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146774110-1"></script>
@@ -37,12 +37,23 @@
 </head>
 
     <body class="page-index">
+      
         <header class="navbar-seven">
   <a href="https://learn.byseven.co"><img src="../assets/img/LOGO-LEARN-02.png" alt="" id='seven-logo'></a>
-  <nav class="navbar-links">
-    <a href="/training/">Formations</a>
-    <a href="/method/">Méthode</a>
-  </nav>
+  <div style='display:flex;align-items:center;'>
+    <nav class="navbar-links">
+      <a href="/training/">Formations</a>
+      <a href="/method/">Méthode</a>
+    </nav>
+    
+      <ul style='margin:0;padding:0;'>
+        <li class='navbar-links-lang' style='display:inline;'>
+          <a href="/home" class="fr">fr</a>
+          <a href="/home-en" class="en">en</a>
+        </li>
+      </ul>
+    
+  </div>
 <!--   <nav class="navbar-burger">
     <i class="fas fa-bars"></i>
   </nav> -->
@@ -57,8 +68,9 @@
   </div>
 </header>
 
-        <main>
-            <div class="home-banner">
+      
+      <main>
+          <div class="home-banner">
   <div class="home-banner-title">
     <h1>Apprendre, créer, transformer en continu pour entreprendre son avenir</h1>
     <h2>Chez Seven, nous créons des expériences d'apprentissage pour les femmes et les hommes de façon à transformer les organisations</h2>
@@ -186,13 +198,9 @@ J'ai recommandé leurs formations aux 150 collaborateurs qui travaillent dans me
         <label for="form-name">Votre nom</label>
         <input type="text" name="name" id='form-name' placeholder="Nom" class='form-control'>
       </div>
-      <div class="form-group t_r_a_p">
-        <label for="form-email">Votre adresse email</label>
-        <input type="email" name="_t_r_4_p" id='form-email' placeholder="Adresse email" class='form-control' value="Choisir">
-      </div>
       <div class="form-group">
-        <label for="form-email">Votre courriel</label>
-        <input type="text" name="courriel" id='form-courriel2' placeholder="Courriel" class='form-control'>
+        <label for="form-email" class='hidden'>Votre adresse email</label>
+        <input type="email" name="courriel" id='form-email' placeholder="Adresse email" class='form-control hidden' value="Choisir">
       </div>
       <div class="form-group">
         <label for="form-message">Votre message</label>
@@ -201,27 +209,13 @@ J'ai recommandé leurs formations aux 150 collaborateurs qui travaillent dans me
       <button type="submit" disabled class="btn contact-button">Soumettre</button>
     </form>
   </div>
-  <script>
-    const test = document.getElementById('form-email');
-    const test2 = document.getElementById('form-courriel2');
-    const button = document.querySelector('.contact-button');
-    test2.addEventListener('keydown', (event) => {
-      if (test.value === 'Choisir') {
-        button.disabled = false;
-      } else {
-        button.disabled = true;
-      }
-    });
-    // test.addEventListener('input', (event) => {
-    //   button.disabled = true;
-    // });
-  </script>
 </div>
 
   </div>
 </div>
 
-        </main>
+      </main>
+      
         <div class="footer">
   <div class="footer-main">
     <h3><strong>SEVEN</strong> learn</h3>
@@ -275,13 +269,9 @@ J'ai recommandé leurs formations aux 150 collaborateurs qui travaillent dans me
         <label for="form-name">Votre nom</label>
         <input type="text" name="name" id='form-name' placeholder="Nom" class='form-control'>
       </div>
-      <div class="form-group t_r_a_p">
-        <label for="form-email">Votre adresse email</label>
-        <input type="email" name="_t_r_4_p" id='form-email' placeholder="Adresse email" class='form-control' value="Choisir">
-      </div>
       <div class="form-group">
-        <label for="form-email">Votre courriel</label>
-        <input type="text" name="courriel" id='form-courriel2' placeholder="Courriel" class='form-control'>
+        <label for="form-email" class='hidden'>Votre adresse email</label>
+        <input type="email" name="courriel" id='form-email' placeholder="Adresse email" class='form-control hidden' value="Choisir">
       </div>
       <div class="form-group">
         <label for="form-message">Votre message</label>
@@ -290,26 +280,12 @@ J'ai recommandé leurs formations aux 150 collaborateurs qui travaillent dans me
       <button type="submit" disabled class="btn contact-button">Soumettre</button>
     </form>
   </div>
-  <script>
-    const test = document.getElementById('form-email');
-    const test2 = document.getElementById('form-courriel2');
-    const button = document.querySelector('.contact-button');
-    test2.addEventListener('keydown', (event) => {
-      if (test.value === 'Choisir') {
-        button.disabled = false;
-      } else {
-        button.disabled = true;
-      }
-    });
-    // test.addEventListener('input', (event) => {
-    //   button.disabled = true;
-    // });
-  </script>
 </div>
 
   </div>
 </div>
 
+      
     </body>
     <script src="/assets/javascripts/bootstrap.js"></script>
     <script src="/assets/javascripts/homeseven.js"></script>

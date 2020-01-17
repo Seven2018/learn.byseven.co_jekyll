@@ -13,14 +13,6 @@ ref: method
     <p>Winston Churchill</p>
   </div>
 </div>
-<ul>
-  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-  {% for page in pages %}
-    <li>
-      <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
-    </li>
-  {% endfor %}
-</ul>
 <div class="method-main-text">
   <a id='method-anchor'></a>
   <h2>La Méthode</h2>
@@ -90,7 +82,7 @@ ref: method
       <div>
         {% for person in persons %}
           {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-          {% if thecycle == 'odd' %}
+          {% if thecycle == 'even' %}
             <div class="method-team-card">
               <img src="{{person.photo}}" class='method-team-avatar'>
               <div class="method-team-card-text">

@@ -13,7 +13,7 @@ l’effet de rareté,
 le principe de réciprocité,
 le principe de similarité,
 la pression sociale."
-teaser2: "Les participants découvriront comment chacune de ces lois s’applique à la construction de leur réseau online et offline et comment maximiser leur influence lors de la présentation de leurs propositions de valeurs."
+teaser2: "Les participants découvriront comment chacune de ces lois s’applique à la construction de leur réseau online et offline et comment maximiser leur influence."
 date: 2018-03-12 22:30:21 +0000
 lang: fr
 categories: economic-intelligence

@@ -58,3 +58,7 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# plugins:
+#   - jekyll-multiple-languages-plugin
+
+languages: ["fr", "en"]

@@ -2,7 +2,7 @@
 firstname: Yahya
 lastname: Fallah
 order: 2
-photo: "/assets/img/yahya.jpg"
+photo: "/assets/img/yahya.jpeg"
 <!-- tags: Co-fondateur -->
 colorone: rgb(254, 197, 84)
 coloronedesc: Optimisme et mise en relation

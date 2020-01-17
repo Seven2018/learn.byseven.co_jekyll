@@ -4,7 +4,7 @@ type: content
 permalink: "/content/piloter-une-equipe-internationale/"
 title: PILOTER UNE ÉQUIPE INTERNATIONALE
 image: "/assets/img/piloter-une-equipe-internationale.png"
-order: 9
+order: 6
 quote: "“Toute créature humaine est un être différent, en chacun de ceux qui la regardent.”
  – Anatole France"
 teaser1: "Piloter une équipe internationale nécessite une connaissance aiguisée des différences interculturelles, une maîtrise des compétences cross-culturelles et une gestion précise des délais et horaires pour le pilotage des affaires internationales."

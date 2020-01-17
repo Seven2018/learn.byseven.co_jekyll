@@ -19,7 +19,7 @@
 .scrolled {
   background-color: white;
 
-  .navbar-links > a {
+  .navbar-links > a, .navbar-links-lang > a {
   color: black;
 
     &:hover {
@@ -43,6 +43,19 @@
 
     &:hover {
       color: white;
+    }
+  }
+}
+
+.navbar-links-lang {
+    a {
+    text-decoration: none;
+    color: white;
+    font-family: "InfoDispSemiBold Roman";
+
+    &:hover {
+      color: white;
+      border-bottom: solid 3px rgb(252, 200, 75);
     }
   }
 }

@@ -6285,9 +6285,9 @@ button.close {
 
 .scrolled {
   background-color: white; }
-  .scrolled .navbar-links > a {
+  .scrolled .navbar-links > a, .scrolled .navbar-links-lang > a {
     color: black; }
-    .scrolled .navbar-links > a:hover {
+    .scrolled .navbar-links > a:hover, .scrolled .navbar-links-lang > a:hover {
       color: black; }
 
 .navbar-links {
@@ -6303,6 +6303,14 @@ button.close {
     font-family: "InfoDispSemiBold Roman"; }
     .navbar-links a:hover {
       color: white; }
+
+.navbar-links-lang a {
+  text-decoration: none;
+  color: white;
+  font-family: "InfoDispSemiBold Roman"; }
+  .navbar-links-lang a:hover {
+    color: white;
+    border-bottom: solid 3px #fcc84b; }
 
 .navbar-burger {
   position: absolute;
@@ -6433,6 +6441,429 @@ button.close {
   width: auto; }
   .seven-main-link > h3:hover {
     color: black; }
+
+body {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+h1 {
+  font-family: "InfoDispBold Roman";
+  font-size: 24px; }
+  @media only screen and (min-width: 37.5em) {
+    h1 {
+      font-size: 28px; } }
+  @media only screen and (min-width: 64em) {
+    h1 {
+      font-size: 40px; } }
+
+h2 {
+  font-family: "InfoDispBold Roman";
+  font-size: 20px; }
+  @media only screen and (min-width: 37.5em) {
+    h2 {
+      font-size: 24px; } }
+  @media only screen and (min-width: 64em) {
+    h2 {
+      font-size: 30px; } }
+
+h3 {
+  font-family: "Infotext Normal";
+  font-size: 16px; }
+  @media only screen and (min-width: 37.5em) {
+    h3 {
+      font-size: 20px; } }
+  @media only screen and (min-width: 64em) {
+    h3 {
+      font-size: 24px; } }
+
+a {
+  color: black;
+  font-family: "InfoDispSemiBold Roman"; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: black; }
+
+p {
+  font-family: "InfoText Normal";
+  font-size: 16px; }
+  @media only screen and (min-width: 64em) {
+    p {
+      font-size: 20px; } }
+
+.method-flag {
+  min-height: 350px;
+  height: 45vh;
+  padding: 97px 50px 50px 50px;
+  background-color: #a6c6e2;
+  background-image: url("/assets/img/methode-banner.jpg");
+  background-size: cover;
+  background-position: 0, 50%;
+  position: relative;
+  display: flex;
+  align-items: end; }
+  .method-flag p {
+    width: 50vw;
+    color: white; }
+
+.method-main-text {
+  background-color: #edf6ff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px; }
+  .method-main-text h2 {
+    margin-top: 79.9px; }
+  .method-main-text div {
+    background-color: white;
+    margin: 60px auto;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 2px rgba(136, 136, 136, 0.7);
+    text-align: left; }
+    @media only screen and (min-width: 64em) {
+      .method-main-text div {
+        margin: 60px 200px; } }
+  .method-main-text div > p {
+    margin: 0; }
+
+.method-intro, .method-titles {
+  font-weight: bold; }
+
+.method-titles {
+  color: #739dbe; }
+
+.method-italics {
+  font-family: 'InfoTextRegular Italic';
+  color: #739dbe; }
+
+#team-anchor {
+  position: absolute;
+  top: 0px; }
+
+.method-team {
+  background-image: url("/assets/img/FOND_POIS.png");
+  background-size: contain;
+  background-repeat: repeat-y;
+  padding: 10px;
+  text-align: center;
+  position: relative; }
+  @media only screen and (min-width: 37.5em) {
+    .method-team {
+      padding: 70px 50px; } }
+  .method-team .container > h2 {
+    margin-bottom: 94.9px; }
+
+.method-team-presentation {
+  text-align: center;
+  margin: 0 30px; }
+  .method-team-presentation h2 {
+    margin-top: 94.9px; }
+  @media only screen and (min-width: 64em) {
+    .method-team-presentation {
+      margin: 0 55px; } }
+
+.method-team-grid {
+  margin: auto;
+  width: 100%; }
+  @media only screen and (min-width: 64em) {
+    .method-team-grid {
+      padding: 0 100px; } }
+
+.method-team-grid-columns-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (min-width: 64em) {
+    .method-team-grid-columns-small {
+      display: none; } }
+
+.method-team-grid-columns-large {
+  display: none; }
+  @media only screen and (min-width: 64em) {
+    .method-team-grid-columns-large {
+      display: flex;
+      justify-content: space-around; } }
+
+.method-team-card {
+  background-color: #f6f6f6;
+  box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8);
+  padding: 30px;
+  margin: 20px 0;
+  width: 300px;
+  height: auto; }
+  @media only screen and (min-width: 64em) {
+    .method-team-card {
+      margin: 40px 60px;
+      width: 400px; } }
+  @media only screen and (min-width: 80em) {
+    .method-team-card {
+      width: 435px; } }
+
+.method-team-avatar {
+  height: 150px;
+  border-radius: 50%; }
+  @media only screen and (min-width: 64em) {
+    .method-team-avatar {
+      height: 200px; } }
+  @media only screen and (min-width: 80em) {
+    .method-team-avatar {
+      height: 250px; } }
+
+.method-team-card-text {
+  text-align: left;
+  padding-top: 20px; }
+  .method-team-card-text p {
+    font-size: 16px; }
+
+.method-team-card-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .method-team-card-name h3 {
+    font-family: 'InfoDispBold Roman';
+    margin: 0;
+    color: #739dbf; }
+  .method-team-card-name div > i {
+    margin: 0 5px;
+    cursor: help; }
+  .method-team-card-name div > i > span {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -75px;
+    padding: 5px;
+    color: black;
+    background: #EDF6FF;
+    opacity: 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transform: scale(0) rotate(-12deg);
+    transition: all .25s;
+    font-family: "InfoText Normal";
+    font-size: 16px;
+    display: inline;
+    overflow-wrap: anywhere;
+    white-space: nowrap; }
+  .method-team-card-name div > i:hover span, .method-team-card-name div > i:focus span {
+    transform: scale(1) rotate(0);
+    opacity: 1; }
+
+.method-team-card-contacts > a {
+  margin: 0 5px; }
+
+.method-team-card-contacts > a:first-child {
+  margin-left: 10px; }
+
+.page-flag {
+  min-height: 350px;
+  height: 45vh;
+  background-image: url("/assets/img/formation-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 97px 50px 50px 50px;
+  overflow: hidden; }
+  .page-flag h2, .page-flag p {
+    color: white;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    max-width: 100%; }
+    @media only screen and (min-width: 37.5em) {
+      .page-flag h2, .page-flag p {
+        max-width: 55vw; } }
+  @media only screen and (min-width: 64em) {
+    .page-flag {
+      height: 50vh;
+      max-height: 450px; } }
+
+#leadership-flag {
+  background-image: url("/assets/img/leadership.jpg");
+  background-size: cover;
+  background-position: right 60% top 10%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: end; }
+
+#team-management-flag {
+  background-image: url("/assets/img/gestion dequipe.jpg");
+  background-size: cover; }
+
+#communication-flag {
+  background-image: url("/assets/img/communication.jpg");
+  background-size: cover;
+  background-position: 0 55%; }
+
+#business-developement-flag {
+  background-image: url("/assets/img/business-developement.jpeg");
+  background-size: cover;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end; }
+
+#project-management {
+  background-image: url("/assets/img/gestion de projet.jpg");
+  background-size: cover; }
+
+#economic-intelligence-flag {
+  background-image: url("/assets/img/intelligence eco.jpg");
+  background-size: cover; }
+
+#team-building-flag {
+  background-image: url("/assets/img/team building.jpg");
+  background-size: cover; }
+
+.training-list {
+  text-align: center;
+  padding: 70px 50px;
+  background-color: #fbf7eb; }
+  .training-list .container {
+    margin-top: 60px;
+    padding: 0 20px; }
+
+.training-card {
+  height: 400px !important;
+  text-align: left;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.4);
+  margin: 20px 5px;
+  transition: all 0.8s ease; }
+  .training-card:hover {
+    transform: scale(1.02);
+    background-color: #ffc451; }
+    .training-card:hover div > h3, .training-card:hover a, .training-card:hover p {
+      color: white; }
+
+.training-card-img {
+  height: 250px; }
+
+.training-card-description {
+  height: 150px;
+  text-align: center;
+  padding: 30px 25px 25px 25px;
+  transition: all 0.8s ease; }
+  .training-card-description h3, .training-card-description a {
+    margin: 0 0 24px 0;
+    font-family: "InfoDispBold Roman";
+    margin: 0 0 10px 0;
+    color: #ffc451; }
+  .training-card-description p {
+    font-family: "InfoDispBook Italic";
+    color: #606060; }
+
+.training-category-link {
+  margin-bottom: 24px; }
+
+.training-link {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.offer {
+  background-image: url("/assets/img/MONTAGNES_JAUNES.png");
+  background-size: cover;
+  background-position: center;
+  padding: 75px 50px;
+  text-align: center;
+  width: 100%;
+  float: left;
+  clear: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media only screen and (min-width: 80em) {
+    .offer {
+      min-height: 450px; } }
+
+.offer > div {
+  margin: 30px 0 20px 0; }
+
+.offer > h2 {
+  font-family: "InfoDispBold Roman";
+  font-size: 24px;
+  margin: 0 0 30px 0; }
+  @media only screen and (min-width: 64em) {
+    .offer > h2 {
+      font-size: 40px; } }
+
+.offer > h3 {
+  font-family: "InfoText Normal";
+  font-size: 20px;
+  margin: 30px 0; }
+  @media only screen and (min-width: 64em) {
+    .offer > h3 {
+      font-size: 30px; } }
+
+.content-list {
+  text-align: center;
+  background-color: #fbf7eb;
+  padding: 20px; }
+  .content-list h2 {
+    margin-bottom: 70px !important; }
+  @media only screen and (min-width: 64em) {
+    .content-list {
+      padding: 70px 50px; } }
+
+.content-list-flag p {
+  width: 450px; }
+
+.content-list-card {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  position: relative; }
+  @media only screen and (min-width: 37.5em) {
+    .content-list-card {
+      width: 350px; } }
+  @media only screen and (min-width: 64em) {
+    .content-list-card {
+      margin: 40px auto;
+      width: 900px;
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.content-list-card-img {
+  width: 90vw;
+  height: 90vw; }
+  @media only screen and (min-width: 37.5em) {
+    .content-list-card-img {
+      width: 350px;
+      height: 350px; } }
+  @media only screen and (min-width: 64em) {
+    .content-list-card-img {
+      width: 450px;
+      height: 450px; } }
+
+.content-list-card-desc {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 90vw;
+  height: 90vw; }
+  @media only screen and (min-width: 37.5em) {
+    .content-list-card-desc {
+      width: 350px;
+      height: 350px; } }
+  @media only screen and (min-width: 64em) {
+    .content-list-card-desc {
+      width: 450px;
+      height: 450px; } }
+
+.content-list-card-text {
+  text-align: left; }
+  .content-list-card-text h3 {
+    font-family: 'InfoDispBold Roman'; }
+  .content-list-card-text p, .content-list-card-text h4 {
+    font-size: 12px; }
+    @media only screen and (min-width: 64em) {
+      .content-list-card-text p, .content-list-card-text h4 {
+        font-size: 16px; } }
+
+.content-list-card-linkto {
+  position: absolute;
+  top: -100px; }
 
 .home-banner {
   height: 100vh;
@@ -6727,51 +7158,3 @@ button.close {
   border: none; }
   .contact-button:hover {
     background-color: #3aa2ac; }
-
-body {
-  max-width: 1440px;
-  margin: 0 auto; }
-
-h1 {
-  font-family: "InfoDispBold Roman";
-  font-size: 24px; }
-  @media only screen and (min-width: 37.5em) {
-    h1 {
-      font-size: 28px; } }
-  @media only screen and (min-width: 64em) {
-    h1 {
-      font-size: 40px; } }
-
-h2 {
-  font-family: "InfoDispBold Roman";
-  font-size: 20px; }
-  @media only screen and (min-width: 37.5em) {
-    h2 {
-      font-size: 24px; } }
-  @media only screen and (min-width: 64em) {
-    h2 {
-      font-size: 30px; } }
-
-h3 {
-  font-family: "Infotext Normal";
-  font-size: 16px; }
-  @media only screen and (min-width: 37.5em) {
-    h3 {
-      font-size: 20px; } }
-  @media only screen and (min-width: 64em) {
-    h3 {
-      font-size: 24px; } }
-
-a {
-  color: black;
-  font-family: "InfoDispSemiBold Roman"; }
-  a:hover, a:focus {
-    text-decoration: none;
-    color: black; }
-
-p {
-  font-family: "InfoText Normal";
-  font-size: 16px; }
-  @media only screen and (min-width: 64em) {
-    p {
-      font-size: 20px; } }

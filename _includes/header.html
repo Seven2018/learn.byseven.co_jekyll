@@ -1,9 +1,28 @@
 <header class="navbar-seven">
   <a href="https://learn.byseven.co"><img src="../assets/img/LOGO-LEARN-02.png" alt="" id='seven-logo'></a>
-  <nav class="navbar-links">
-    <a href="/training/">Formations</a>
-    <a href="/method/">Méthode</a>
-  </nav>
+  <div style='display:flex;align-items:center;'>
+    <nav class="navbar-links">
+      <a href="/training/">Formations</a>
+      <a href="/method/">Méthode</a>
+    </nav>
+    {% if page.ref != 'home' %}
+      <ul style='margin:0;padding:0;'>
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' | reverse %}
+        {% for page in pages %}
+          <li class='navbar-links-lang' style='display:inline;'>
+            <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <ul style='margin:0;padding:0;'>
+        <li class='navbar-links-lang' style='display:inline;'>
+          <a href="{{ base.url }}/home" class="fr">fr</a>
+          <a href="{{ base.url }}/home-en" class="en">en</a>
+        </li>
+      </ul>
+    {% endif %}
+  </div>
 <!--   <nav class="navbar-burger">
     <i class="fas fa-bars"></i>
   </nav> -->

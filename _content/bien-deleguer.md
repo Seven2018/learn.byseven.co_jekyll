@@ -2,7 +2,7 @@
 layout: base
 type: content
 permalink: "/content/bien-deleguer/"
-title: SAVOIR ÉCOUTER
+title: BIEN DELEGUER
 image: "/assets/img/bien-deleguer.jpg"
 order: 4
 quote: "“Le management, ce n'est pas un art, c'est une discipline.”

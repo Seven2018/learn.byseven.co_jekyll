@@ -5,7 +5,8 @@ permalink: "/content/relever-le-marshmallow-challenge/"
 title: RELEVER LE MARSHMALLOW CHALLENGE
 image: "/assets/img/relever-le-marshmallow-challenge.jpg"
 order: 1
-quote: "L'exigence professionnelle en stratégie demande d’exprimer visiblement et simplement des problématique complexe."
+quote: "“Les performances individuelles, ce n'est pas le plus important. On gagne et on perd en équipe.”
+ – Zinédine Zidane"
 teaser1: "18 Min par équipe,
 1 marshmallow,
 20 spaghettis,

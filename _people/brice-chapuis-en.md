@@ -2,7 +2,7 @@
 firstname: Brice
 lastname: Chapuis
 order: 5
-photo: "/assets/img/Brice.png"
+photo: "/assets/img/Brice.jpg"
 <!-- tags: CTO -->
 colorone: rgb(115, 157, 191)
 coloronedesc: Organisation et prise de recul

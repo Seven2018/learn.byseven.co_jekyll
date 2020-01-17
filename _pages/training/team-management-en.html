@@ -1,9 +1,10 @@
 ---
 layout: base
 type: training
-permalink: /training/team-management.html
+permalink: /training/team-management-en
 title: "Gestion d'équipe"
 lang: en
+ref: team-management
 ---
 
 <div class="page-flag content-list-flag" id="team-management-flag">
@@ -12,7 +13,7 @@ lang: en
 </div>
 <div class="content-list">
   <h2>Our workshops about {{page.title}}</h2>
-  {% assign contents = site.content| where: 'categories', 'team-management' | sort: 'order' %}
+  {% assign contents = site.content| where: 'categories', 'team-management' | where: 'lang', page.lang | sort: 'order' %}
   {% for content in contents %}
     <div class="content-list-card">
       <a href="" class="content-list-card-linkto" id="{{content.title}}"></a>

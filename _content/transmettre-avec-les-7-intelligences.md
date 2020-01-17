@@ -4,7 +4,7 @@ type: content
 permalink: "/content/transmettre-avec-les-7-intelligences/"
 title: TRANSMETTRE AVEC LES 7 INTELLIGENCES
 image: "/assets/img/transmettre-avec-les-7-intelligences.png"
-order: 8
+order: 5
 quote: "“Tout ce qui vaut la peine d’être enseigné peut être présenté de différentes façons.”
  – Howard Gardner"
 teaser1: "Chaque personne développe une intelligence propre en fonction de ses expériences individuelles.

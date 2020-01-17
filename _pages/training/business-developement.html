@@ -4,6 +4,7 @@ type: training
 permalink: /training/business-developement.html
 title: "Business Developement"
 lang: fr
+ref : business-development
 ---
 
 <div class="page-flag content-list-flag" id="business-developement-flag">
@@ -12,7 +13,7 @@ lang: fr
 </div>
 <div class="content-list">
   <h2>Nos ateliers en {{page.title}}</h2>
-  {% assign contents = site.content| where: 'categories', 'business-developement' | sort: 'order' %}
+  {% assign contents = site.content| where: 'categories', 'business-developement' | where: 'lang', page.lang | sort: 'order' %}
   {% for content in contents %}
     <div class="content-list-card">
       <a href="" class="content-list-card-linkto" id="{{content.title}}"></a>
