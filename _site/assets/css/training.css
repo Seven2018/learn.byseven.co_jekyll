@@ -6269,8 +6269,7 @@ button.close {
 /* --- large screens, from 1024px --- */
 /* --- wider screens, from 1280px --- */
 /* --- super wide screens, from 1440px --- */
-.navbar-seven {
-  background-color: rgba(255, 255, 255, 0);
+.navbar-seven, .navbar-seven-school {
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
@@ -6279,9 +6278,15 @@ button.close {
   top: 0;
   z-index: 10;
   transition: all 0.8s ease; }
-  .navbar-seven img {
+  .navbar-seven img, .navbar-seven-school img {
     height: 33px;
     margin: 7px 0; }
+
+.navbar-seven {
+  background-color: rgba(255, 255, 255, 0); }
+
+.navbar-seven-school {
+  background-color: white; }
 
 .scrolled {
   background-color: white; }
@@ -6346,7 +6351,7 @@ button.close {
 .footer {
   min-height: 250px;
   padding: 25px 50px;
-  background-color: #606060;
+  background-color: #262A2D;
   display: flex;
   justify-content: space-between;
   flex-direction: column; }
@@ -6363,7 +6368,7 @@ button.close {
       width: 20%;
       text-align: left;
       padding-right: 20px;
-      border-right: 3px solid #333333; } }
+      border-right: 3px solid rgba(255, 255, 255, 0.7); } }
 
 .footer-main > p {
   margin: 0 auto;
@@ -6416,7 +6421,8 @@ button.close {
   margin: 0; }
 
 .footer-main h3, .footer-main h4, .footer-categories h3, .footer-categories h4 {
-  font-family: "InfoDispBold Roman"; }
+  font-family: "InfoDispBook Roman";
+  color: white; }
 .footer-main h3, .footer-categories h3 {
   margin: 20px 0; }
   @media only screen and (min-width: 37.5em) {
@@ -6428,19 +6434,17 @@ button.close {
   margin: 20px 0; }
 .footer-main p, .footer-main a, .footer-categories p, .footer-categories a {
   font-family: "InfoDispBook Roman";
-  font-size: 16px; }
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7); }
   @media only screen and (min-width: 64em) {
     .footer-main p, .footer-main a, .footer-categories p, .footer-categories a {
       width: auto;
       font-size: 20px; } }
 .footer-main a:hover, .footer-categories a:hover {
-  color: #333333; }
+  color: white; }
 
-.seven-main-link > h3 {
-  color: #333333;
-  width: auto; }
-  .seven-main-link > h3:hover {
-    color: black; }
+html {
+  font-size: 62.5%; }
 
 body {
   max-width: 1440px;
@@ -6481,7 +6485,8 @@ a {
   font-family: "InfoDispSemiBold Roman"; }
   a:hover, a:focus {
     text-decoration: none;
-    color: black; }
+    color: black;
+    outline: none; }
 
 p {
   font-family: "InfoText Normal";
@@ -6489,6 +6494,63 @@ p {
   @media only screen and (min-width: 64em) {
     p {
       font-size: 20px; } }
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0, 0, 0, 0); }
+
+.centered-item {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.flex-row-between-centered {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.flex-row-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.flex-row-start-centered {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.flex-row-around-centered {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.flex-column-between-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.flex-column-between-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.hidden {
+  display: none !important; }
 
 .page-flag {
   min-height: 350px;
@@ -6548,6 +6610,14 @@ p {
 #team-building-flag {
   background-image: url("/assets/img/team building.jpg");
   background-size: cover; }
+
+#digital-flag {
+  background-image: url("/assets/img/outils-digitaux.jpg");
+  background-size: cover;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end; }
 
 .training-list {
   text-align: center;
@@ -6996,3 +7066,6 @@ p {
   border: none; }
   .contact-button:hover {
     background-color: #3aa2ac; }
+
+#thanks-container {
+  height: calc(100vh - 297px); }

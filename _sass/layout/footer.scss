@@ -1,8 +1,7 @@
 .footer {
-  // width: 100vw;
   min-height: 250px;
   padding: 25px 50px;
-  background-color: rgb(96, 96, 96);
+  background-color: #262A2D;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -20,13 +19,8 @@
     display: block;
     width: 20%;
     text-align: left;
-    // margin-right: 40px;
     padding-right: 20px;
-    border-right: 3px solid rgb(51, 51, 51);
-  }
-
-  @include from-xlarge {
-
+    border-right: 3px solid rgba(255,255,255,0.7);
   }
 }
 
@@ -94,7 +88,8 @@
 
 .footer-main, .footer-categories {
   h3, h4 {
-    font-family: "InfoDispBold Roman";
+    font-family: "InfoDispBook Roman";
+    color: white;
   }
   h3 {
     margin: 20px 0;
@@ -111,6 +106,7 @@
   p, a {
     font-family: "InfoDispBook Roman";
     font-size: 16px;
+    color: rgba(255,255,255,0.7);
 
     @include from-large {
       width: auto;
@@ -118,14 +114,6 @@
     }
   }
   a:hover {
-    color: rgb(51, 51, 51);
-  }
-}
-
-.seven-main-link > h3 {
-  color: rgb(51, 51, 51);
-  width: auto;
-  &:hover {
-    color: black;
+    color: rgba(255,255,255,1);
   }
 }

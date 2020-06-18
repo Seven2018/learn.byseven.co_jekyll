@@ -1,0 +1,129 @@
+#school-container {
+  max-width: 102rem;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+
+  @include from-large {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+#school-sticky-column {
+  width: 100%;
+
+  @include from-large {
+    width: 33.33333333%;
+    position: sticky;
+    top: 7.7rem;
+    right: 0;
+  }
+}
+
+#school-sticky-column-logo {
+  min-height: 15rem;
+  width: 100%;
+
+  @include from-large {
+    max-width: 34rem;
+  }
+}
+
+#school-sticky-column-logo-image {
+  max-height: 66%;
+}
+
+#school-sticky-column-infos {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.school-sticky-column-infos-formation, .school-sticky-column-infos-formation-bold {
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+}
+
+.school-sticky-column-infos-formation {
+  color: #373a3c;
+  font-weight: 300;
+}
+
+.school-sticky-column-infos-formation-bold {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.school-sticky-column-infos-formation-grey {
+  color: #a8a8a8;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+
+.school-sticky-column-infos-divider {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #ccc;
+  height: 0.1rem;
+}
+
+.school-booking-button {
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  padding: 1.3rem 2.5rem;
+  margin-top: 2rem;
+  background-color: #FCC94B;
+  font-size: 2rem;
+}
+
+#school-main-column {
+  width: 100%;
+  margin: 3rem 0;
+
+  @include from-large {
+    width: 66.66666667%;
+    padding-right: 7rem;
+  }
+}
+
+#school-main-column-banner {
+  width: 100%;
+  height: 40rem;
+  background-size: object-fit;
+  background-position: center;
+}
+
+.school-main-column-paragraph {
+  margin-bottom: 8rem;
+}
+
+.school-main-column-faq-element {
+  padding-top: 2rem;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
+
+.school-main-column-faq-question {
+
+  i {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+}
+
+.school-main-column-faq-answer {
+}
+
+.fa-angle-down {
+  transition: transform 0.3s linear;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s linear;
+}

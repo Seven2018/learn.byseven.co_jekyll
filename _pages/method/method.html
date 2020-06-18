@@ -46,7 +46,7 @@ ref: method
   <div class="container">
     <h2>L'Equipe</h2>
     <div class='method-team-presentation'>
-      <p>Au fil de son histoire, Seven a constitué une communauté de 55 formateurs et experts passionnés et passionnants. Cette diversité de profils permet de constituer des équipes à chaque fois uniques pour animer les formations les plus créatives et ludiques.</p>
+      <p>Au fil de son histoire, Seven a constitué une communauté de 95 formateurs et experts passionnés et passionnants. Cette diversité de profils permet de constituer des équipes à chaque fois uniques pour animer les formations les plus créatives et ludiques.</p>
       <br>
       <p>Voici quelques un(e)s de nos Seveners :</p>
     </div>
@@ -82,7 +82,7 @@ ref: method
       <div>
         {% for person in persons %}
           {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-          {% if thecycle == 'even' %}
+          {% if thecycle == 'odd' %}
             <div class="method-team-card">
               <img src="{{person.photo}}" class='method-team-avatar'>
               <div class="method-team-card-text">
